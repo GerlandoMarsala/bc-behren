@@ -357,7 +357,7 @@ nav {
     width: 90%;
     margin: auto;
     height: 65vh;
-    padding-top: 30px;
+    padding-bottom: 150px;
 }
 
 .titlePage {
@@ -387,6 +387,11 @@ nav {
 }
 .borderTitlePage {
     width: 50%;
+    margin: auto;
+    border-top: solid 1px #000;
+}
+.borderStylePage {
+    width: 60%;
     margin: auto;
     border-top: solid 1px #000;
 }
@@ -448,34 +453,96 @@ nav {
 
 
 /* FIN PAGE CONTACT */
+/* DEBUT PAGE ImagePlanning */
+.containerPlanning {
+    width: 90%;
+    margin: auto;
+    height: 100vh;
+    padding-top: 20px;
+}
+
+/* FIN PAGE ImagePlanning */
 
 /* DEBUT PAGE A PROPOS */
 .containerApropos {
     width: 90%;
     margin: auto;
     height: 100vh;
-    padding-top: 30px;
+    padding-top: 120px;
+}
+
+.borderLeft {
+    border-left: solid 1px black;
 }
 .containerTitleApropos {
     width: 90%;
     margin: auto;
-    padding-top: 30px;
+    padding-bottom: 50px;
 }
+/* .containerTitleApropos {
+    --b: 6px;   
+    --w: 80px;  
+    --g: 15px;  
+    --c: #131416;
+   
+    width: fit-content;
+    padding: 0 1em;
+    line-height: 1.6em;
+    border: 1px solid;
+    color: #fff;
+    background: 
+      conic-gradient(from   45deg at left ,var(--c) 25%,#0000 0) 0,
+      conic-gradient(from -135deg at right,var(--c) 25%,#0000 0) 100%;
+    background-size: 51% 100%;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    border-image: 
+       linear-gradient(
+         #0000      calc(50% - var(--b)/2),
+         var(--c) 0 calc(50% + var(--b)/2),
+         #0000    0) 
+      1/0 var(--w)/calc(var(--w) + var(--g));
+    margin-inline: auto;
+} */
 .containerInscription {
     width: 90%;
     margin: auto;
-    height: 120vh;
+    height: 200vh;
     padding-top: 30px;
 }
-
+.containerSection {
+    /* padding-bottom: 100px; */
+    height: 50vh;
+}
 .containerParagrapheInscription {
-    padding-top: 35px;
+    padding-bottom: 80px;
     margin: auto;
     width: 70%;
     font-family: "Play", sans-serif;
     font-weight: 400;
     font-style: normal;
     line-height: 27px;
+}
+.tarifRight {
+    margin: auto;
+}
+.containerBackground {
+    width: 100%;
+    margin: auto;
+    background-color: #131416;
+    padding: 10px;
+    text-align: center;
+    /* padding-top: 50px; */
+}
+.paragrapheImportant {
+    font-family: "Play", sans-serif;
+    color: white;
+}
+.containerParagrapheImportant {
+
+    width: 50%;
+    margin: auto;
+    /* padding-top: 50px; */
 }
 .textLicence {
     font-family: "Play", sans-serif;
@@ -494,7 +561,12 @@ nav {
     line-height: 27px;
     font-style: normal;
 }
-
+@media all and (max-width: 1669px) {
+    .containerApropos {
+        height: 100vh;
+        padding-top: 350px;
+    }
+}
 @media all and (max-width: 850px) {
     .containerApropos {
         height: 100vh;
@@ -523,11 +595,17 @@ nav {
     width: 100%;
     text-align: center;
 }
-
+@media all and (max-width: 1669px) {
+    .containerImgPlanning {
+        height: 100vh;
+        padding-bottom: 500px;
+    }
+}
 .imgPlanning {
     width: auto;
     height: 80vh;
 }
+
 @media all and (max-width: 850px) {
     .imgPlanning {
         height: 75vh;
@@ -543,18 +621,37 @@ nav {
     }
 }   
 .containerFaq {
-    height: 60vh;
+    height: 120vh;
     width: 70%;
     margin: auto;
     font-family: "Play", sans-serif;
     font-weight: 400;
     font-style: normal;
     line-height: 27px;
-    /* padding-top: 250px; */
+    padding-top: 350px;
 }
-@media all and (max-width: 850px) {
+@media all and (max-width: 1669px) {
     .containerFaq {
-       padding-bottom: 350px;
+       padding-top: 380px;
+       height: 120vh;
+    }
+}  
+@media all and (max-width: 1669px) {
+    .containerFaq {
+       padding-top: 380px;
+       height: 120vh;
+    }
+}  
+@media all and (max-width: 1360px) {
+    .containerFaq {
+        padding-top: 450px;
+        height: 130vh;
+    }
+}  
+@media all and (max-width: 1290px) {
+    .containerFaq {
+        /* padding-top: 500px; */
+        /* height: 150vh; */
     }
 }  
 @media all and (max-width: 575px) {
@@ -678,6 +775,13 @@ nav {
 }
 .name {
     font-size: 1.5rem;
+    font-weight: bold;
+}
+.nameEducatif {
+    color: #1057E2;
+}
+.nameLoisirAmateur {
+    color: #E52323;
 }
 .text p {
     margin: 0;
@@ -832,7 +936,7 @@ nav {
 /* DEBUT PAGE GALERIE */
 .containerGalerie {
     width: 80%;
-    height: 150vh;
+    /* height: 230vh; */
     margin: auto;
 }
 .containerParagrapheGalerie {
@@ -846,21 +950,60 @@ nav {
 .paragrapheGalerie {
     padding-bottom: 50px;
 }
-.imgGalerie {
 
-    max-height : 100%;
-width : auto;
-    transition: transform .1s;
-    cursor: pointer;
+
+.containerGalerieImages {
+    font-size: 3rem;
+    padding: 2rem;
+    text-align: center;
 }
-.imgGalerie:hover {
-    -ms-transform: scale(1.5);
-    -webkit-transform: scale(1.5);
-    transform: scale(1.5);
 
-    /* A TESTER POUR RAJOUTER UN TITRE A CHAQUE IMAGE AU HOVER
-     opacity: 0.5;
-    filter: brightness(0.4); */
+.img-containerGalerie {
+    width: 100%;
+    object-fit: cover;
+}
+.galerieImg {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    
+    /* height: 100%; */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.caption {
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-weight: 700;
+}
+
+.thumbnail:hover {
+    transform: translateY(-4px);
+}
+.img-containerGalerie:hover .overlay {
+    opacity: 0.6;
+}
+
+.img-containerGalerie img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 /* FIN PAGE GALERIE */
 

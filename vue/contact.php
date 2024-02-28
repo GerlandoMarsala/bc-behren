@@ -15,21 +15,30 @@
             <i class="fa-brands fa-facebook"></i>
         </div>
         <div class="containerRightContact">
-            <form data-aos="zoom-in" action="">
+            <form data-aos="zoom-in" method="post" action="../controller/traitement_contact.php">
+            
+            <div class="form-floating mb-3">
+                    <input type="text" class="form-control" style="width:500px;" name="objet" id="floatingInputDisabled" placeholder="Objet" disable>
+                    <label for="floatingInputDisabled">Objet :</label>
+                    
+                </div>    
                 <div class="form-floating mb-3">
-
-                    <input type="name" class="form-control" id="floatingInputDisabled" placeholder="name@example.com" disabled>
+                    <input type="text" class="form-control" name="nom" id="floatingInputDisabled" placeholder="Nom" disable>
                     <label for="floatingInputDisabled">Nom :</label>
                 </div>
                 <div class="form-floating mb-3">
-                    <input class="form-control" placeholder="Leave a comment here" id="floatingTextareaDisabled" disabled></input>
-                    <label for="floatingTextareaDisabled">Prénom :</label>
+                    <input type="text" class="form-control" name="prenom" id="floatingInputDisabled" placeholder="Prénom" disable>
+                    <label for="floatingInputDisabled">Prénom :</label>
                 </div>
                 <div class="form-floating mb-3">
-                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2Disabled" style="height: 100px" disabled></textarea>
+                    <input type="email" class="form-control" name="email" placeholder="name@example.com" id="floatingTextareaDisabled" disable></input>
+                    <label for="floatingTextareaDisabled">Email :</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <textarea class="form-control" name="msg" placeholder="Ecrire votre message ici ..." id="floatingTextarea2Disabled" style="height: 100px" disable></textarea>
                     <label for="floatingTextarea2Disabled">Message :</label>
                 </div>
-                <input type="submit" class="btn btn-dark buttonEnvoyer"></button>
+                <input type="submit" value="Envoyer" class="btn btn-dark buttonEnvoyer"></input>
             </form>
         </div>
     </div>

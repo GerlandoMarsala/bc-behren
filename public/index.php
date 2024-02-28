@@ -52,6 +52,9 @@ if(isset($_GET['page'])){
   if ($_GET['page'] == 5){
     include("../vue/galerie.php");
   }
+  if ($_GET['page'] == 6){
+    include("../vue/imagePlanning.php");
+  }
 }
 include("../vue/footer.php");
 
