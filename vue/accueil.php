@@ -17,7 +17,7 @@
   <h3 class="titleCard">DEVENEZ ADHÉRENT DU BC BEHREN</h3>
   <div class="border border-black w-50 mx-auto my-3"></div>
   <div class="containerCardBody">
-    <div class="card cardStyle" data-aos="fade-down-right" data-aos-duration="1000">
+    <div class="cardBody cardStyle" data-aos="fade-down-right" data-aos-duration="1000">
 
 
       <div class="card-body p-5">
@@ -28,7 +28,7 @@
     </div>
 
 
-    <div class="card cardStyle" data-aos="fade-down-right" data-aos-duration="1000">
+    <div class="cardBody cardStyle" data-aos="fade-down-right" data-aos-duration="1000">
 
       <div class="card-body p-5">
         <p class="card-title text-center"><i class="fa-solid fa-mitten fs-1"></i></h5>
@@ -36,7 +36,7 @@
       </div>
     </div>
 
-    <div class="card cardStyle" data-aos="fade-down-right" data-aos-duration="1000">
+    <div class="cardBody cardStyle" data-aos="fade-down-right" data-aos-duration="1000">
 
       <div class="card-body p-5">
         <div class="text-center">
@@ -59,10 +59,10 @@
             <img src="assets/img/bc-behren-carrousel.jpg" class="d-block imgCarrousel" alt="...">
           </div>
           <div class="carousel-item" data-bs-interval="2000">
-            <img src="assets/img/bc-behren-carrousel2.jpg" class="d-block imgCarrousel" alt="...">
+            <img src="assets/img/bc-behren-carrousel3.jpg" class="d-block imgCarrousel" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="assets/img/bc-behren-carrousel3.jpg" class="d-block imgCarrousel" alt="...">
+            <img src="assets/img/galerie-bcb11.jpeg" class="d-block imgCarrousel" alt="...">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
@@ -77,4 +77,3 @@
     </div>
   </div>
 </div>
-

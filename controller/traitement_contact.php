@@ -23,26 +23,20 @@ $msg = htmlspecialchars($_POST['msg']);
 
 
 // echo"test";
-if(!empty($_POST)) {
-    
+if (!empty($_POST)) {
 
 
-    if(
+
+    if (
         isset($_POST['objet'], $_POST['nom'], $_POST['prenom'], $_POST['email'], $_POST['msg'])
         && !empty($_POST['objet']) && !empty($_POST['nom']) && !empty($_POST['prenom']) && !empty($_POST['email']) && !empty($_POST['msg'])
-    ){
+    ) {
 
         insertMsg($pdo, $date_creation, $nom, $prenom, $objet, $email, $msg);
 
         header('Location:../public/index.php?success=messageEnvoye');
-    }else {
+    } else {
 
         header('Location:../public/index.php?page=2erreur=formulaireIncomplet');
-        }
-        
-} 
-    
-
-
-
-
+    }
+}

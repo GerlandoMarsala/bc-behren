@@ -1,5 +1,5 @@
 <div class="containerInfosAndForm">
-        <!-- <div class="containerLeftContact text-center">
+    <!-- <div class="containerLeftContact text-center">
             <p>BC BEHREN,<br>COSEC, 15 Rue du Stade,<br>
                 57460 Behren-lès-Forbach<br>
                 M. Christian PIGA<br>
@@ -37,6 +37,6 @@
             </form>
         </div> -->
 
-        
-        
-    </div>
+
+
+</div>

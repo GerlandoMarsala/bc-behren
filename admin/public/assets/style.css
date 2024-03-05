@@ -1,0 +1,9 @@
+.logo-bc-behren {
+    height: 25vh;
+    width: 100%;
+    background: url(../assets/img/bcb-logo.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 10px 5px 5px 5px #131416;
+}
