@@ -75,7 +75,7 @@
       include("../vue/connexion.php");
     }
   }
-  include("../vue/footer.php");
+  // include("../vue/footer.php");
 
   ?>
 

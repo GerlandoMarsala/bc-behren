@@ -14,28 +14,59 @@
             <p class="paragrapheJustify">Bienvenue sur notre page "Actualités" ! Ici, vous retrouverez les informations du moment : compétitions, événements passionnants, et tout ce qui anime la vie de notre club. Cette page sera régulièrement mise à jour pour vous tenir informé(e) de tout ce qui se passe chez nous.</p>
         </div>
 
-        <!-- <div class="card mb-3 containerCardActualites bg-dark text-white">
-            <img src="assets/img/galerie-bcb10.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <p class="card-text"><small class="text-body-white">Last updated 3 mins ago</small></p>
-            </div>
-        </div> -->
 
-        <div class="card containerCardActualites text-bg-dark">
-            <img src="assets/img/galerie-bcb10.jpg" class="card-img" alt="...">
-
-            <div class="card-img-overlay containerInfosActualites">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <p class="card-text"><small>Last updated 3 mins ago</small></p>
-                <button class="card-text btnActualites">Voir l'actualité</button>
-            </div>
-
-
+<div class="containerCardActualites">
+        <div class="card mb-3">
+        
+    <img src="assets/img/galerie-bcb10.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+    </div>
         </div>
+</div>
 
+<div class="containerCardActualites">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card">
+                    <img src="assets/img/galerie-bcb10.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                    </div>
+                </div>
+                </div>
+</div>
         <h2 data-aos="fade-up" data-aos-duration="1500" class="text-center my-3 titleStyle"></h2>
 
     </div>

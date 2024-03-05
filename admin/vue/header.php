@@ -1,7 +1,7 @@
 <!-- HEADER DE LA PAGE -->
 
-<div class="d-flex flex-nowrap">
-  <!-- <h1 class="visually-hidden">Sidebars examples</h1> -->
+<div class="d-flex flex-nowrap vh-100">
+  <h1 class="visually-hidden">Sidebars examples</h1>
 
   <div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark" style="width: 280px;">
     <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
@@ -36,8 +36,8 @@
         <strong>MON COMPTE</strong>
       </a>
       <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
-        <!-- <li><a class="dropdown-item" href="#">New project...</a></li>
-        <li><a class="dropdown-item" href="#">Settings</a></li> -->
+        <li><a class="dropdown-item" href="#">New project...</a></li>
+        <li><a class="dropdown-item" href="#">Settings</a></li>
         <li><a class="dropdown-item" href="#">Profil</a></li>
         <li><hr class="dropdown-divider"></li>
         <li><a class="dropdown-item" href="#">Déconnexion</a></li>

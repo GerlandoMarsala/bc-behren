@@ -570,7 +570,7 @@ nav {
 
 @media all and (max-width: 900px) {
     .containerContact {
-        height: 110vh;
+        /* height: 110vh; */
     }
 
     .inputFlex {
@@ -1239,25 +1239,23 @@ nav {
 
 .containerActualites {
     width: 100%;
-    height: 200vh;
-    margin: auto;
+    /* margin: 1.5rem 15%; */
 }
 .containerCardActualites {
-    width: 50%;
+    width: 70%;
     margin: auto;
-    
 }
 .imgOpacity {
     opacity: 0.4;
 }
 .containerParagrapheActualites {
-    padding-bottom: 20px;
+    padding-bottom: 1rem;
     margin: auto;
     width: 70%;
     font-family: "Play", sans-serif;
     font-weight: 400;
     font-style: normal;
-    line-height: 27px;
+    /* line-height: 27px; */
 }
 .containerSection {
 
@@ -1309,7 +1307,7 @@ nav {
 /* // Medium devices (tablets, less than 992px) */
 @media (max-width: 992px) {
     .containerContact {
-        padding-bottom: 190vh;
+        /* padding-bottom: 190vh; */
     }
 
     /* .containerInfosAndForm {
@@ -1331,13 +1329,13 @@ nav {
 /* // X-Small devices (portrait phones, less than 576px) */
 @media only screen and (max-width: 645px) {
     .containerContact {
-        padding-bottom: 200vh;
+        /* padding-bottom: 200vh; */
         /* height: 200vh; */
     }
 }
 @media (max-width: 628px) {
     .containerContact {
-        padding-bottom: 230vh;
+        /* padding-bottom: 230vh; */
     }
 }
 
@@ -1363,6 +1361,6 @@ nav {
 
 @media (max-width: 352px) {
     .containerContact {
-        padding-bottom: 240vh;
+        /* padding-bottom: 240vh; */
     }
 }
