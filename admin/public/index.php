@@ -50,6 +50,9 @@
     if ($_GET['page'] == 2) {
       include("../vue/actualites.php");
     }
+    if ($_GET['page'] == 3) {
+      include("../vue/ajout_actualite.php");
+    }
   }
   // include("../vue/footer.php");
 

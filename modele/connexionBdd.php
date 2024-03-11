@@ -4,10 +4,9 @@
 $username = 'root';
 $mdp = '';
 try {
-    $pdo = new PDO('mysql:host=localhost;dbname=boxingclubbehren', $username, $mdp);
+    $pdo = new PDO('mysql:host=localhost;dbname=bcbehren', $username, $mdp);
     // echo 'connexion réussie';
-}catch(PDOException $e){
+} catch (PDOException $e) {
     echo $e->getMessage();
     die();
 }
-?>
