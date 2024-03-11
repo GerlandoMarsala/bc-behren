@@ -29,8 +29,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Playball&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-<!-- police i am a player -->
-<link href="https://fonts.cdnfonts.com/css/i-am-a-player" rel="stylesheet">
+  <!-- police i am a player -->
+  <link href="https://fonts.cdnfonts.com/css/i-am-a-player" rel="stylesheet">
 
 </head>
 
@@ -48,31 +48,7 @@
       include("../vue/accueil.php");
     }
     if ($_GET['page'] == 2) {
-      include("../vue/contact.php");
-    }
-    if ($_GET['page'] == 3) {
-      include("../vue/a-propos.php");
-    }
-    if ($_GET['page'] == 4) {
-      include("../vue/presentation-club.php");
-    }
-    if ($_GET['page'] == 5) {
-      include("../vue/galerie.php");
-    }
-    if ($_GET['page'] == 6) {
-      include("../vue/imagePlanning.php");
-    }
-    if ($_GET['page'] == 7) {
-      include("../vue/competiteur.php");
-    }
-    if ($_GET['page'] == 8) {
       include("../vue/actualites.php");
-    }
-    if ($_GET['page'] == 9) {
-      include("../vue/partenaires.php");
-    }
-    if ($_GET['page'] == 10) {
-      include("../vue/connexion.php");
     }
   }
   // include("../vue/footer.php");
