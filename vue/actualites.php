@@ -74,7 +74,8 @@
                 Victoire de Lucas Felker a Pont-A-Mousson, au terme d'un combat très engagé !
             </p>
             <p class="card-text"><small>Date : 06/03/2024</small></p>
-            <button class="buttonActu"><a href="index.php?page=11" class="colorTextButton">Voir l'actualité</a></button>
+            <div><button class="buttonActu"><a href="index.php?page=11" class="colorTextButton">Voir l'actualité</a></button></div>
+            
         </div>
     </div>
 </div>
