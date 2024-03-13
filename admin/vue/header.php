@@ -1,6 +1,7 @@
 <!-- HEADER DE LA PAGE -->
 
 <div class="d-flex flex-nowrap vh-100">
+  <!-- faire max height 100% + overflow scroll au niveau du body, dans la page actualité -->
   <h1 class="visually-hidden">Sidebars examples</h1>
 
   <div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark" style="width: 280px;">

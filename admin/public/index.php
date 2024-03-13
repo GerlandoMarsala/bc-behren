@@ -53,6 +53,12 @@
     if ($_GET['page'] == 3) {
       include("../vue/ajout_actualite.php");
     }
+    if ($_GET['page'] == 4) {
+      include("../vue/modif_actualite.php");
+    }
+    if ($_GET['page'] == 5) {
+      include("../vue/supp_actualite.php");
+    }
   }
   // include("../vue/footer.php");
 

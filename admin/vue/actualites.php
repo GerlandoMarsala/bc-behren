@@ -1,3 +1,13 @@
+<?php
+// session_start();
+require '../../modele/connexionBdd.php';
+require '../modele/fonctions.php';
+
+
+$listeActualites = getAllActualites($pdo);
+
+?>
+
 <div class="containerAdminHome">
     <div class="logo-bc-behren">
 
@@ -18,42 +28,33 @@
     <table class="table">
         <thead>
             <tr>
+
+
+
+                <!-- ICI CONTINUER, METTRE L'ACTU EN DYNAMIQUE DANS LE BACK OFFICE ET ENSUITE SUR LE SITE WEB -->
                 <th scope="col">#</th>
                 <th scope="col">Nom de l'actualité</th>
                 <th scope="col">Description</th>
                 <th scope="col">Date de l'actualité</th>
-                <th scope="col">Photos</th>
                 <th scope="col">Modifier</th>
                 <th scope="col">Supprimer</th>
             </tr>
+
         </thead>
         <tbody>
-            <tr>
-                <th scope="row">1</th>
-                <td>Reprise au BC Behren</td>
-                <td>La reprise de la saison 2023-2024</td>
-                <td>06/03/2024</td>
-                <td>Photos reprise.jpg</td>
-                <td><i class="fa-solid fa-pen"></td>
-                <td><i class="fa-solid fa-trash"></td>
-            </tr>
-            <tr>
-                <th scope="row">2</th>
-                <td>Otto</td>
-                <td>Otto</td>
-                <td>@fat</td>
-                <td>@fat</td>
-                <td><i class="fa-solid fa-pen"></td>
-                <td><i class="fa-solid fa-trash"></td>
-            </tr>
-            <tr>
-                <th scope="row">3</th>
-                <td colspan="2">Larry the Bird</td>
-                <td>@twitter</td>
-                <td>@twitter</td>
-                <td><i class="fa-solid fa-pen"></td>
-                <td><i class="fa-solid fa-trash"></td>
-            </tr>
+            <?php foreach ($listeActualites as $actualite) {  ?>
+                <tr>
+                    <th scope="row"><?php  echo htmlspecialchars($actualite['id_actualite'], ENT_QUOTES, 'UTF-8'); ?></th>
+                    <td><?php  echo htmlspecialchars($actualite['nom_actualite'], ENT_QUOTES, 'UTF-8'); ?></td>
+                    <td><?php  echo htmlspecialchars($actualite['date_actualite'], ENT_QUOTES, 'UTF-8'); ?></td>
+                    <!-- <td>Photos reprise.jpg</td> -->
+                    <td><?php  echo htmlspecialchars($actualite['description'], ENT_QUOTES, 'UTF-8'); ?></td>
+                    <td><a href="index.php?page=4&id_actualite=<?php echo htmlspecialchars($actualite['id_actualite'], ENT_QUOTES,'UTF-8');?>"><i class="fa-solid fa-pen text-dark"></a></td>
+                    <td><a href="index.php?page=5"><i class="fa-solid fa-trash text-dark"></a></td>
+                </tr>
+            <?php
+            }
+            ?>
         </tbody>
     </table>
 </div>
