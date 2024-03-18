@@ -9,22 +9,24 @@ $date = $_POST['date'];
 $photos = $_POST['photos'];
 
 $idActualite = $_POST['id_actualite'];
+$idImages = $_POST['id_images'];
 
-var_dump($_POST);
-// echo"test";
 if (!empty($_POST)) {
-    // echo 'hello';
     if (!empty($_FILES['photos']['name'])) {
-    
         if (checkFiles()) {
             checkPostActualite($pdo, $nomActualite, $description, $date, $idActualite);
-            $idActualite = $pdo->lastInsertId();
             // $chemin correspond à $nomImage dans fonction.php
-            updateImage($pdo, $nomImage, $idActualite);
+            if (isset($_POST['id_images']) && !empty($_POST['id_images'])) {
+                updateImage($pdo, $chemin, $idActualite);
+            } else {
+                createImage($pdo, $chemin, $idActualite);
+            }
         }
     } else {
         checkPostActualite($pdo, $nomActualite, $description, $date, $idActualite);
     }
+
+
 }
 function checkFiles()
 {

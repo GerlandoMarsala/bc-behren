@@ -22,7 +22,7 @@
 
       <div class="card-body p-5">
 
-        <p class="card-title text-center"><i class="fa-solid fa-children fs-1"></i></p>
+        <p class="card-title text-center"><i class="fa-solid fa-children fs-1 text-black"></i></p>
         <h5 class="card-text text-center fs-5 text-black"><a href="" style="text-decoration: none;" class="text-black">BOXE EDUCATIVE</a></h5>
       </div>
     </div>
@@ -31,8 +31,8 @@
     <div class="cardBody cardStyle" data-aos="fade-down-right" data-aos-duration="1000">
 
       <div class="card-body p-5">
-        <p class="card-title text-center"><i class="fa-solid fa-mitten fs-1"></i></h5>
-        <h5 class="card-text text-center fs-5 text-black"><a href="" style="text-decoration: none;" class="text-black">BOXE LOISIR</a></p>
+        <p class="card-title text-center"><i class="fa-solid fa-mitten fs-1 text-black"></i></p>
+        <h5 class="card-text text-center fs-5 text-black"><a href="" style="text-decoration: none;" class="text-black">BOXE LOISIR</a></h5>
       </div>
     </div>
 
@@ -41,7 +41,7 @@
       <div class="card-body p-5">
         <div class="text-center">
           <!-- <img src="../public/assets/img/icon-fight.png" class="iconBoxeAmateur" alt=""> -->
-          <img src="https://img.icons8.com/external-tanah-basah-basic-outline-tanah-basah/24/external-boxing-sport-tanah-basah-basic-outline-tanah-basah.png" alt="external-boxing-sport-tanah-basah-basic-outline-tanah-basah" class="iconBoxeAmateur" />
+          <i class="fa-solid fa-hand-fist fs-1 text-black"></i>
         </div>
         <h5 class="card-text text-center fs-5"><a href="" style="text-decoration: none;" class="text-black">BOXE AMATEUR</a></h5>
       </div>

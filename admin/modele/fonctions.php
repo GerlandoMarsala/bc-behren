@@ -42,7 +42,7 @@ function getActualiteById($pdo, $idActualite)
     ('SELECT actualite.*, images.* 
     FROM actualite 
     LEFT JOIN images ON actualite.id_actualite = images.id_actualite
-    WHERE actualite.id_actualite = ' .$idActualite);
+    WHERE actualite.id_actualite = ' . $idActualite);
 
     $reqRecupActualite->execute([$idActualite]);
     $actualite = $reqRecupActualite->fetch();
@@ -53,17 +53,29 @@ function getActualiteById($pdo, $idActualite)
 // fonction qui permet de mettre a jour une actualite 
 function updateActualite($pdo, $nomActualite, $description, $date, $idActualite)
 {
-    echo'enculer  ' .$idActualite;
-    $reqInsertActualite = $pdo->prepare('UPDATE actualite SET nom_actualite = ?, description = ?, id_competition = ?) WHERE actualite.id_actualite = ?');
-    $reqInsertActualite->execute([$nomActualite, $description,  NULL, intval($idActualite)]);
-
+    $reqInsertActualite = $pdo->prepare('UPDATE actualite SET nom_actualite = ?, description = ?, id_competition = ? WHERE id_actualite = ?');
+    $reqInsertActualite->execute([$nomActualite, $description, NULL, intval($idActualite)]);
 }
+
 // fonction qui permet de mettre a jour une image
 function updateImage($pdo, $nomImage, $idActualite)
 {
     $reqInsertActualite = $pdo->prepare('UPDATE images SET nom_images = ? WHERE id_actualite = ?');
     $reqInsertActualite->execute([$nomImage, $idActualite]);
+}
 
+
+function deleteActualite($pdo, $idActualite)
+{
+    $reqInsertActualite = $pdo->prepare('DELETE FROM actualite WHERE id_actualite = ?');
+    $reqInsertActualite->execute([$idActualite]);
+}
+
+// fonction qui permet de mettre a jour une image
+function deleteImage($pdo, $idActualite)
+{
+    $reqInsertActualite = $pdo->prepare('DELETE FROM images WHERE id_actualite = ?');
+    $reqInsertActualite->execute([$idActualite]);
 }
 
 

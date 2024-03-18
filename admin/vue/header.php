@@ -22,12 +22,12 @@
         </a>
       </li>
       <li>
-        <a href="" class="nav-link text-white">
+        <!-- <a href="" class="nav-link text-white">
           <svg class="bi pe-none me-2" width="16" height="16">
             <use xlink:href="#speedometer2" />
           </svg>
           CONTACT
-        </a>
+        </a> -->
       </li>
       <li>
         <a href="../public/index.php?page=2" class="nav-link text-white">
