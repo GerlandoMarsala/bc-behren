@@ -14,17 +14,7 @@ function createImage($pdo, $nomImage, $idActualite)
 
 }
 
-// fonction qui me permet de récupérer les photos des actualités via une jointure entre la table actualites et la table images
-
-// function recupImages($pdo, $idImages) {
-//     $reqImages = $pdo->prepare('SELECT *
-//     FROM images i, actualite a
-//     WHERE i.id_images = a.id_images
-//     $reqImages
-//     ')
-// }
-
-// exemple fonction pour récup les actualités
+// fonction pour récup les actualités
 function getAllActualites($pdo)
 {
     $reqInsertActualite = $pdo->prepare('SELECT * FROM actualite');
@@ -34,7 +24,6 @@ function getAllActualites($pdo)
     return $listeActualites;
 }
 
-// recuperer une actualite
 // $idActualite parametres qui correspond a l'id que l'on à récupérer avec le GET dans l'URL
 function getActualiteById($pdo, $idActualite)
 {

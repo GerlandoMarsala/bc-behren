@@ -4,42 +4,46 @@
   <h1 class="titleAccueil">BOXING CLUB BEHREN</h1>
   <h2 class="titleListBox">BOXE EDUCATIVE <span class="colorTitleBoxeLoisir">- BOXE LOISIR -</span> BOXE AMATEUR</h2>
 
-  <div class="containerParagraphe">
-    <p class="paragrapheAccueil">Créé dans les années 1960, le Boxing Club Behren est une école de boxe anglaise reconnu dans la Moselle.
+  <div class="containerParagraphePage">
+    <p class="paragrapheJustify">Créé dans les années 1960, le Boxing Club Behren est une école de boxe anglaise reconnu dans la Moselle.
       Occupant les locaux municipaux du COSEC de Behrèn-Lès-Forbach, le club prône depuis ses débuts des valeurs tel que la volonté, le courage, et la discipline. </br></br>
       Depuis plusieurs années, le club à pu obtenir de nombreux titres départementaux, régionnaux, et nationaux, prouvant le sérieux du staff technique, dirigée par le Président M. Christian PIGA.
     </p>
+
+
   </div>
+
+</div>
 </div>
 
 <div class="containerCard">
 
   <h3 class="titleCard">DEVENEZ ADHÉRENT DU BC BEHREN</h3>
   <div class="border border-black w-50 mx-auto my-3"></div>
-  <div class="containerCardBody">
-    <div class="cardBody cardStyle" data-aos="fade-down-right" data-aos-duration="1000">
+  <div class="containerCardBody py-5">
+    <div class="cardBody cardStyle my-4" data-aos="fade-down-right" data-aos-duration="1000">
 
 
-      <div class="card-body p-5">
+      <div class="card-body bg-white p-5">
 
-        <p class="card-title text-center"><i class="fa-solid fa-children fs-1 text-black"></i></p>
+        <p class="card-title text-center py-2"><i class="fa-solid fa-children fs-1 text-black"></i></p>
         <h5 class="card-text text-center fs-5 text-black"><a href="" style="text-decoration: none;" class="text-black">BOXE EDUCATIVE</a></h5>
       </div>
     </div>
 
 
-    <div class="cardBody cardStyle" data-aos="fade-down-right" data-aos-duration="1000">
+    <div class="cardBody cardStyle my-4" data-aos="fade-down-right" data-aos-duration="1000">
 
-      <div class="card-body p-5">
-        <p class="card-title text-center"><i class="fa-solid fa-mitten fs-1 text-black"></i></p>
+      <div class="card-body bg-white p-5">
+        <p class="card-title text-center py-2"><i class="fa-regular fa-face-smile-wink fs-1 text-black"></i></p>
         <h5 class="card-text text-center fs-5 text-black"><a href="" style="text-decoration: none;" class="text-black">BOXE LOISIR</a></h5>
       </div>
     </div>
 
-    <div class="cardBody cardStyle" data-aos="fade-down-right" data-aos-duration="1000">
+    <div class="cardBody cardStyle my-4" data-aos="fade-down-right" data-aos-duration="1000">
 
-      <div class="card-body p-5">
-        <div class="text-center">
+      <div class="card-body bg-white p-5">
+        <div class="text-center py-2">
           <!-- <img src="../public/assets/img/icon-fight.png" class="iconBoxeAmateur" alt=""> -->
           <i class="fa-solid fa-hand-fist fs-1 text-black"></i>
         </div>
@@ -75,5 +79,19 @@
         </button>
       </div>
     </div>
+  </div>
+</div>
+
+<h2 class="titleAccueil">ORGANISATION DU CLUB</h2>
+<div class="containerOrganisation">
+
+
+  <div class="container-fluid">
+    <div class="row text-center">
+      <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="4000" class="col-lg-4 col-md-12 col-sm-12"><img src="assets/img/bc-behren-round3.png" class="imgOrga" alt=""></div>
+      <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="4000" class="col-lg-4 col-md-12 col-sm-12 "><img src="assets/img/bc-behren-round2.jpg" class="imgOrga" alt=""></div>
+      <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="4000" class="col-lg-4 col-md-12 col-sm-12"><img src="assets/img/bc-behren-round1.jpg" class="imgOrga" alt=""></div>
+    </div>
+
   </div>
 </div>

@@ -5,7 +5,7 @@ require '../../modele/connexionBdd.php';
 
 $idActualite = $_GET['id_actualite'];
 
-echo "que des fdp" . $idActualite;
+echo "fonctionneeee" . $idActualite;
 if (isset($_GET['id_actualite']) && !empty($_GET['id_actualite'])) {
 
     //Première étape : supprimer les lignes correspondante aux jointures

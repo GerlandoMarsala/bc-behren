@@ -25,20 +25,14 @@ $actualite = getActualiteById($pdo, $idActualite);
 
         <form method="post" action="../controller/traitement_modif_actualite.php" enctype="multipart/form-data">
             <!--  ID ACTUALITE   -->
-            <input type="number" name="id_actualite"
-                   value="<?php echo htmlspecialchars($idActualite, ENT_QUOTES, 'UTF-8'); ?>" hidden="true">
+            <input type="number" name="id_actualite" value="<?php echo htmlspecialchars($idActualite, ENT_QUOTES, 'UTF-8'); ?>" hidden="true">
             <!--  ID IMAGES   -->
-            <input type="number" name="id_images"
-                   value="<?php echo htmlspecialchars($actualite['id_images'], ENT_QUOTES, 'UTF-8'); ?>" hidden="true">
+            <input type="number" name="id_images" value="<?php echo htmlspecialchars($actualite['id_images'], ENT_QUOTES, 'UTF-8'); ?>" hidden="true">
             <!--  NOM ACTUALITE  -->
-            <div class="mb-3"><label for="exampleFormControlInput1">Nom de l'actualité</label><input
-                        class="form-control"
-                        value="<?php echo htmlspecialchars($actualite['nom_actualite'], ENT_QUOTES, 'UTF-8'); ?>"
-                        id="exampleFormControlInput1" name="nomActualite" type="text" placeholder="Titre"></div>
+            <div class="mb-3"><label for="exampleFormControlInput1">Nom de l'actualité</label><input class="form-control" value="<?php echo htmlspecialchars($actualite['nom_actualite'], ENT_QUOTES, 'UTF-8'); ?>" id="exampleFormControlInput1" name="nomActualite" type="text" placeholder="Titre"></div>
             <div class="mb-3">
                 <div class="mb-0"><label for="exampleFormControlTextarea1">Description de l'actualité</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" name="description"
-                              rows="3"><?php echo htmlspecialchars($actualite['description'], ENT_QUOTES, 'UTF-8'); ?></textarea>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" name="description" rows="3"><?php echo htmlspecialchars($actualite['description'], ENT_QUOTES, 'UTF-8'); ?></textarea>
                 </div>
 
             </div>
@@ -46,15 +40,13 @@ $actualite = getActualiteById($pdo, $idActualite);
                 <!-- <label for="exampleFormControlSelect2">Example multiple select</label> -->
                 <label for="start">Start date:</label>
                 <!-- <input type="date" id="start" name="date" value="2018-07-22" min="2018-01-01" /> -->
-                <input class="form-control"
-                       value="<?php echo htmlspecialchars($actualite['date_actualite'], ENT_QUOTES, 'UTF-8'); ?>"
-                       type="date" name="date">
+                <input class="form-control" value="<?php echo htmlspecialchars($actualite['date_actualite'], ENT_QUOTES, 'UTF-8'); ?>" type="date" name="date">
 
             </div>
             <div class="mb-3">
                 <?php
                 if ($actualite['nom_images'] != NULL) {
-                    ?>
+                ?>
 
                     <img src="<?php echo htmlspecialchars($actualite['nom_images'], ENT_QUOTES, 'UTF-8'); ?>" alt="">
                 <?php } ?>

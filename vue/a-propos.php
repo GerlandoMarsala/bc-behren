@@ -6,24 +6,16 @@
 
 
 
-
-
-
-
-
-
-
-
 <!-- <div class="containerInscription"> -->
 
-<div class="containerAPropos">
+<!-- <div class="containerAPropos">
 
 
   <h2 data-aos="fade-up" data-aos-duration="1500" class="text-center my-3 titleStyle">INSCRIPTION AU CLUB</h2>
   <div data-aos="fade-up" data-aos-duration="1500" class="containerSection">
 
 
-    <div class="containerParagrapheInscription">
+    <div class="paragrapheAPropos">
       <p class="paragrapheJustify">Vous souhaitez vous inscrire au Boxing Club Behren ? C'est simple ! Il vous suffit de vous rendre directement au club et de vous adresser à notre coach, M. Joseph Callerame. Il sera ravi de vous accueillir et de vous guider à travers le processus d'inscription.</br></br>Rejoignez-nous dès maintenant pour découvrir tout ce que notre club a à offrir en termes de boxe et de remise en forme !</p>
     </div>
 
@@ -107,7 +99,7 @@
           <div class="row alignRow ">
             <div data-aos="fade-down-right" data-aos-duration="1500" class="cardTeam col-lg-6 col-md-6 col-sm-12 p-1">
               <div class="cardImg">
-                <!-- <img src="assets/img/galerie-bcb6.jpg" class="card-img-top" style="width: 100%;" alt="Sunset Over the Sea"/> -->
+              
                 <div class="text textLicence">
                   <h2 class="name border"><span class="nameEducatif">E</span>ducatif</h2>
                   <p class="ageLicence">de 6 à 12 ans</p>
@@ -121,7 +113,6 @@
 
             <div data-aos="fade-down-right" data-aos-duration="1500" class="cardTeam col-lg-6 col-md-6 col-sm-12 p-1">
               <div class="cardImg">
-                <!-- <img src="assets/img/galerie-bcb10.jpg" class="card-img-top" style="width: 100%;" alt="Sunset Over the Sea"/> -->
                 <div class="text textLicence">
                   <h2 class="name border"><span class="nameLoisirAmateur">L</span>oisir & Amateur</h2>
                   <p class="ageLicence">à partir de 12 ans</p>
@@ -140,18 +131,45 @@
     </div>
 
 
-    <!-- </div>
-</div> -->
   </div>
+
+
+</div> -->
+
+<div class="containerAPropos">
+  <h2 data-aos="fade-up" data-aos-duration="1500" class="text-center my-5 titleStyle">INSCRIPTION AU CLUB</h2>
+  <div class="containerParagraphePage">
+    <div class="row alignInscription">
+      <div class="col-lg-6 py-5">
+        <p class="paragrapheJustify" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="3000">Vous souhaitez vous inscrire au Boxing Club Behren ? C'est simple ! Il vous suffit de vous rendre directement au club et de vous adresser à notre coach, M. Joseph Callerame. Il sera ravi de vous accueillir et de vous guider à travers le processus d'inscription.</br></br>Rejoignez-nous dès maintenant pour découvrir tout ce que notre club a à offrir en termes de boxe et de remise en forme !
+        </p>
+      </div>
+      <div class="col-lg-6">
+        <img data-aos="fade-down" data-aos-easing="linear" data-aos-duration="3000" src="../public/assets/img/galerie-bcb6.jpg" class="w-100 rounded-circle" alt="">
+      </div>
+    </div>
+
+
+  </div>
+
 
 
 </div>
 
+<!-- <div class="sectionImportant">
+  <h3 data-aos="fade-up" data-aos-duration="1500" class="text-center my-2 text-danger">IMPORTANT</h3>
+  <div class="row" fade-up data-aos-duration="1800">
+    <div class="col-lg-6">
+      <p class="">Pour des raisons de sécurité, conformément à nos exigences en matière d'assurance, nous permettrons à un nouveau membre sans licence de participer à un seul entraînement. Après cette période, nous serons contraints de lui refuser l'accès à la salle.</p>
+    </div>
+    <div class="col-lg-6">
+      <p class="">Un examen médical est requis pour obtenir une licence (encadré à remplir par le médecin au verso de la licence). Pour ceux qui envisagent de participer à des compétitions, un examen ophtalmologique sera nécessaire.
+      </p>
+    </div>
 
-
-
-
-<!-- <hr class="border-black"> -->
+</div>
+</div> -->
+<hr class="border-black">
 
 
 
@@ -162,7 +180,7 @@
   <div data-aos="fade-up" data-aos-duration="1500" class="accordion" id="accordionExample">
     <div class="accordion-item">
       <h2 class="accordion-header">
-        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        <button class="accordion-button bg-light text-black" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
           <strong>QU'EST CE QUE LA BOXE ANGLAISE ?</strong>
         </button>
       </h2>
@@ -175,7 +193,7 @@
 
     <div class="accordion-item">
       <h2 class="accordion-header">
-        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+        <button class="accordion-button bg-light text-black" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
           <strong>QUELS SONT LES AVANTAGES DE LA BOXE ANGLAISE ?</strong>
         </button>
       </h2>
@@ -188,7 +206,7 @@
 
     <div class="accordion-item">
       <h2 class="accordion-header">
-        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+        <button class="accordion-button bg-light text-black" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
           <strong>QUI PEUT PRATIQUER LA BOXE ANGLAISE ?</strong>
         </button>
       </h2>
@@ -202,7 +220,7 @@
 
     <div class="accordion-item">
       <h2 class="accordion-header">
-        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+        <button class="accordion-button bg-light text-black" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
           <strong>QUELS EQUIPEMENTS SONT NECESSAIRES POUR LA PRATIQUE DE LA BOXE ANGLAISE ?</strong>
         </button>
       </h2>
@@ -216,7 +234,7 @@
 
     <div class="accordion-item">
       <h2 class="accordion-header">
-        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+        <button class="accordion-button bg-light text-black" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
           <strong>Y A-T-IL DES RISQUES DE BLESSURES DANS LA BOXE ANGLAISE ?</strong>
         </button>
       </h2>
@@ -229,13 +247,13 @@
 
     <div class="accordion-item">
       <h2 class="accordion-header">
-        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
-          <strong>QUELS SONT LES HORAIRES D'OUVERTURE DU CLUB ?</strong>
+        <button class="accordion-button bg-light text-black" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+          <strong>QUEL EST LE TARIF D'UNE LICENCE ?</strong>
         </button>
       </h2>
       <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
         <div class="accordion-body">
-          Toutes les informations concernant les horaires du club sont inscrites sur le planning en haut de page.
+          Le tarif pour les licences est de 70€ pour les éducatifs de 6 à 12 ans et de 100€ pour les loisirs et amateurs à partir de 12 ans.
         </div>
       </div>
     </div>
@@ -243,7 +261,7 @@
 
     <div class="accordion-item">
       <h2 class="accordion-header">
-        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
+        <button class="accordion-button bg-light text-black" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
           <strong>COMMENT PUIS-JE M'INSCRIRE ?</strong>
         </button>
       </h2>
@@ -256,7 +274,7 @@
 
     <div class="accordion-item">
       <h2 class="accordion-header">
-        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="true" aria-controls="collapseEight">
+        <button class="accordion-button bg-light text-black" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="true" aria-controls="collapseEight">
           <strong>POURRAIS-JE PARTICIPER A DES COMPETITIONS ?</strong>
         </button>
       </h2>
@@ -271,12 +289,12 @@
 
     <div class="accordion-item">
       <h2 class="accordion-header">
-        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="true" aria-controls="collapseEight">
+        <button class="accordion-button bg-light text-black" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="true" aria-controls="collapseEight">
           <strong>QUELS SONT LES HORAIRES D'ENTRAINEMENT DU BC BEHREN ?</strong>
         </button>
       </h2>
       <div id="collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-        <div class="accordion-body">
+        <div class="accordion-body text-white">
           <a href="index.php?page=6">Cliquez-ici pour voir les horaires d'entraînements du BC Behren</a>
         </div>
       </div>
