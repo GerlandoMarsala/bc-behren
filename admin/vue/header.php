@@ -22,12 +22,12 @@
         </a>
       </li>
       <li>
-        <!-- <a href="" class="nav-link text-white">
+        <a href="../public/index.php?page=5" class="nav-link text-white">
           <svg class="bi pe-none me-2" width="16" height="16">
             <use xlink:href="#speedometer2" />
           </svg>
-          CONTACT
-        </a> -->
+          MESSAGES
+        </a>
       </li>
       <li>
         <a href="../public/index.php?page=2" class="nav-link text-white">
@@ -35,6 +35,14 @@
             <use xlink:href="#table" />
           </svg>
           ACTUALITÉS
+        </a>
+      </li>
+      <li>
+        <a href="../public/index.php?page=6" class="nav-link text-white">
+          <svg class="bi pe-none me-2" width="16" height="16">
+            <use xlink:href="#table" />
+          </svg>
+          COMPÉTITEURS
         </a>
       </li>
     </ul>

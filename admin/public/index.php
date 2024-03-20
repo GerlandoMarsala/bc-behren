@@ -57,7 +57,13 @@
       include("../vue/modif_actualite.php");
     }
     if ($_GET['page'] == 5) {
-      include("../vue/supp_actualite.php");
+      include("../vue/messages.php");
+    }
+    if ($_GET['page'] == 6) {
+      include("../vue/competiteur.php");
+    }
+    if ($_GET['page'] == 7) {
+      include("../vue/ajout_competiteur.php");
     }
   }
   // include("../vue/footer.php");

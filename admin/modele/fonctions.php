@@ -17,7 +17,7 @@ function createImage($pdo, $nomImage, $idActualite)
 // fonction pour récup les actualités
 function getAllActualites($pdo)
 {
-    $reqInsertActualite = $pdo->prepare('SELECT * FROM actualite');
+    $reqInsertActualite = $pdo->prepare('SELECT * FROM actualite LEFT JOIN images ON actualite.id_actualite = images.id_actualite');
     $reqInsertActualite->execute([]);
     $listeActualites = $reqInsertActualite->fetchAll();
 
@@ -67,11 +67,32 @@ function deleteImage($pdo, $idActualite)
     $reqInsertActualite->execute([$idActualite]);
 }
 
+function getImagesActu($pdo, $idActualite)
+{
+    $reqImageActu = $pdo->prepare('SELECT * FROM images WHERE id_actualite = ?');
+    $reqImageActu->execute([$idActualite]);
+    $imageActu = $reqImageActu->fetchAll();
+
+    return $imageActu;
+}
 
 
+// messages
+function getAllMsg($pdo) {
+    $reqRecupAllMsg = $pdo->prepare('SELECT * FROM messages');
+    $reqRecupAllMsg->execute([]);
+    $listeMsg = $reqRecupAllMsg->fetchAll();
 
+    return $listeMsg;
+}
 
+// competiteurs
+function createCompetiteur($pdo, $nom, $prenom, $pro)
+{
+    $reqInsertCompetiteur = $pdo->prepare('INSERT INTO competiteur(nom, prenom, pro) VALUES(?,?,?)');
+    $reqInsertCompetiteur->execute([$nom, $prenom, $pro]);
 
+}
 
 
 

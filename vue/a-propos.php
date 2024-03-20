@@ -1,5 +1,5 @@
 <!-- A PROPOS -->
-<div class="containerTitleApropos">
+<div class="containerTitle">
   <h1 class="titlePage"><span class="colorTitleB">A </span>PROPOS</h1>
   <div class="borderTitlePage"></div>
 </div>

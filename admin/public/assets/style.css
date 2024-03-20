@@ -5,7 +5,7 @@
 .logo-bc-behren {
     height: 25vh;
     width: 100%;
-    background: url(../assets/img/bcb-logo.jpeg);
+    background: url(../../../public/assets/img/bcb-logo.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -13,7 +13,7 @@
 }
 .titlePage {
     text-align: center;
-    padding: 2rem;
+    padding: 20px;
     font-weight: bold;
     letter-spacing: 1px;
     font-size: 3rem;
@@ -46,6 +46,28 @@
     }
 }
 .buttonActu2 {
+    text-decoration: none;
+    color: white;
+}
+
+.buttonAjouter {
+    display: inline-block;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    background-color: #131416;
+    color: white;
+    border-radius: 8px;
+    padding: 14px 20px 16px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1;
+    transition: transform 200ms,background 200ms;
+    :hover{
+        transform: translateY(-2px);
+    }
+}
+.buttonAjouter2 {
     text-decoration: none;
     color: white;
 }

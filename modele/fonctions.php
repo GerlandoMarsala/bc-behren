@@ -8,12 +8,29 @@ function insertMsg($pdo, $date_creation, $nom, $prenom, $objet, $email, $msg)
     $reqInsertMsg->execute([$date_creation, $nom, $prenom, $objet, $email, $msg]);
 }
 
+function getAllMsg($pdo) {
+    $reqRecupAllMsg = $pdo->prepare('SELECT * FROM messages');
+    $reqRecupAllMsg->execute([]);
+    $listeMsg = $reqRecupAllMsg->fetchAll();
+
+    return $listeMsg;
+}
+
 // exemple fonction pour récup les actualités
+// fonction pour récup les actualités
 function getAllActualites($pdo)
 {
-    $reqInsertActualite = $pdo->prepare('SELECT * FROM actualite');
+    $reqInsertActualite = $pdo->prepare('SELECT * FROM actualite LEFT JOIN images ON actualite.id_actualite = images.id_actualite');
     $reqInsertActualite->execute([]);
     $listeActualites = $reqInsertActualite->fetchAll();
+
+    return $listeActualites;
+}
+function getActualite($pdo, $idActualite)
+{
+    $reqInsertActualite = $pdo->prepare('SELECT * FROM actualite WHERE id_actualite = ?');
+    $reqInsertActualite->execute([$idActualite]);
+    $listeActualites = $reqInsertActualite->fetch();
 
     return $listeActualites;
 }
@@ -31,4 +48,13 @@ function getActualiteById($pdo, $idActualite)
     $actualite = $reqRecupActualite->fetch();
 
     return $actualite;
+}
+
+function getImagesActu($pdo, $idActualite)
+{
+    $reqImageActu = $pdo->prepare('SELECT * FROM images WHERE id_actualite = ?');
+    $reqImageActu->execute([$idActualite]);
+    $imageActu = $reqImageActu->fetchAll();
+
+    return $imageActu;
 }

@@ -20,44 +20,62 @@ $listeActualites = getAllActualites($pdo);
     </div>
     <p class="text-center py-3">Espace ADMIN, ici vous pouvez ajouter, modifier, ou supprimer une actualité.</h2>
 
-    <div class="text-center py-5">
-        <button>
-            <a href="index.php?page=3">Ajouter une actualité</a>
+    <div class="text-center py-2">
+        <button class="buttonAjouter">
+            <a href="index.php?page=3" class="buttonAjouter2">Ajouter une actualité</a>
         </button>
     </div>
-    <table class="table">
-        <thead>
-            <tr>
 
-
-                <!-- ICI CONTINUER, METTRE L'ACTU EN DYNAMIQUE DANS LE BACK OFFICE ET ENSUITE SUR LE SITE WEB -->
-                <th scope="col">#</th>
-                <th scope="col">Nom de l'actualité</th>
-                <th scope="col">Description</th>
-                <th scope="col">Date de l'actualité</th>
-                <th scope="col">Modifier</th>
-                <th scope="col">Supprimer</th>
-            </tr>
-
-        </thead>
-        <tbody>
-            <?php foreach ($listeActualites as $actualite) { ?>
+    <div class="container">
+        <table class="table align-middle mb-0 bg-white">
+            <thead class="bg-light">
                 <tr>
-                    <th scope="row"><?php echo htmlspecialchars($actualite['id_actualite'], ENT_QUOTES, 'UTF-8'); ?></th>
-                    <td><?php echo htmlspecialchars($actualite['nom_actualite'], ENT_QUOTES, 'UTF-8'); ?></td>
-                    <td><?php echo htmlspecialchars($actualite['date_actualite'], ENT_QUOTES, 'UTF-8'); ?></td>
-                    <!-- <td>Photos reprise.jpg</td> -->
-                    <td><?php echo htmlspecialchars($actualite['description'], ENT_QUOTES, 'UTF-8'); ?></td>
-                    <td>
-                        <a href="index.php?page=4&id_actualite=<?php echo htmlspecialchars($actualite['id_actualite'], ENT_QUOTES, 'UTF-8'); ?>"><i class="fa-solid fa-pen text-dark"></a>
-                    </td>
-                    <td>
-                        <a href="index.php?page=5&id_actualite=<?php echo htmlspecialchars($actualite['id_actualite'], ENT_QUOTES, 'UTF-8'); ?>"><i class="fa-solid fa-trash text-dark"></a>
-                    </td>
+                    <th>#</th>
+                    <th>Image</th>
+                    <th>Nom de l'actualité</th>
+                    <th>Description</th>
+                    <th>Date de l'actualité</th>
+                    <th>Modifier</th>
+                    <th>Supprimer</th>
                 </tr>
-            <?php
-            }
-            ?>
-        </tbody>
-    </table>
+            </thead>
+            <tbody>
+                <?php foreach ($listeActualites as $actualite) { ?>
+                    <tr>
+                        <td>
+                            <div class="ms-3">
+                                <p class="fw-bold mb-1"><?php echo $actualite['id_actualite']; ?></p>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-flex align-items-center">
+                                <img src="<?php echo '../../public/assets/img/' .  htmlspecialchars($actualite['nom_images'], ENT_QUOTES, 'UTF-8'); ?>" alt="" style="width: 45px; height: 45px" class="rounded-circle" />
+                            </div>
+                        </td>
+                        <td>
+                            <p class="fw-normal mb-1"><?php echo htmlspecialchars($actualite['nom_actualite'], ENT_QUOTES, 'UTF-8'); ?></p>
+                        </td>
+
+                        <td>
+                            <p class="text-mute mb-0"><?php echo htmlspecialchars($actualite['description'], ENT_QUOTES, 'UTF-8'); ?></p>
+                        </td>
+                        <td>
+                            <p><?php echo htmlspecialchars($actualite['date_actualite'], ENT_QUOTES, 'UTF-8'); ?></p>
+                        </td>
+                        <td>
+                            <a href="index.php?page=4&id_actualite=<?php echo htmlspecialchars($actualite['id_actualite'], ENT_QUOTES, 'UTF-8'); ?>"><i class="fa-solid fa-pen text-dark"></i>
+                        </td>
+                        <td>
+                            <a href="index.php?traitement_supp_actualite.php&id_actualite=<?php echo htmlspecialchars($actualite['id_actualite'], ENT_QUOTES, 'UTF-8'); ?>"><i class="fa-solid fa-trash text-dark"></i>
+                        </td>
+                    </tr>
+
+
+                <?php
+                }
+                ?>
+            </tbody>
+        </table>
+    </div>
+
 </div>

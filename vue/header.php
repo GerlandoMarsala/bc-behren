@@ -1,8 +1,8 @@
 <!-- HEADER -->
 
-<header>
+<header class="bg-black">
     <nav>
-        <div class="logo"><span class="colorTitleB">B</span><span class="colorTitleC">C</span> BEHREN</div>
+        <div class="logo" class="logo-bc-behre"><span class="colorTitleB"><a href="index.php?page=1" class="colorTitleB">B</a></span><span class="colorTitleC"><a href="index.php?page=1" class="colorTitleC">C</a></span><a href="index.php?page=1" class="linkAccueil"> BEHREN</a></div>
         <div class="toggle">
             <div class="ouvrir">
                 <i class="fas fa-bars"></i>
@@ -13,7 +13,7 @@
         </div>
         <ul class="menu">
             <li><a href="index.php?page=1">ACCUEIL</a></li>
-            <div class="dropdown bg-dark">
+            <div class="dropdown">
                 <button class="btn btn-secondary bg-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                     LE CLUB
                 </button>
@@ -25,13 +25,13 @@
             </div>
             <li><a href="index.php?page=5">GALERIE</a></li>
             <li><a href="index.php?page=3">A PROPOS</a></li>
-            <li><a href="index.php?page=9">PARTENAIRES</a></li>
+            <!-- <li><a href="index.php?page=9">PARTENAIRES</a></li> -->
             <li><a href="index.php?page=2">CONTACT</a></li>
-            <li><a href="index.php?page=10">CO</a></li>
+            <li><a href="index.php?page=10"><i class="fa-solid fa-user text-white"></i></a></li>
         </ul>
     </nav>
 </header>
 
-<section class="logo-bc-behren">
+<!-- <section class="logo-bc-behren">
 
-</section>
+</section> -->

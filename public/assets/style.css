@@ -31,10 +31,12 @@ nav {
 
 .colorTitleB {
     color: #E52323;
+    text-decoration: none;
 }
 
 .colorTitleC {
     color: #1057E2;
+    text-decoration: none;
 }
 
 .colorTitleBoxeLoisir {
@@ -74,7 +76,7 @@ nav {
 }
 
 .logo-bc-behren {
-    height: 80vh;
+    height: 70vh;
     background: url(../assets/img/bcb-logo.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -142,13 +144,22 @@ nav {
 .containerAccueil {
     width: 80%;
     height: 50vh;
-    padding-bottom: 550px;
+    /* padding-bottom: 50px; */
     margin: auto;
+}
+
+/* .lignBlack{
+    border: 1px solid black;
+} */
+.linkAccueil {
+    text-decoration: none;
+    color: white;
 }
 
 .titleAccueil {
     text-align: center;
-    padding: 4rem;
+    padding-bottom: 50px;
+    padding-top: 70px;
     font-weight: bold;
     letter-spacing: 1px;
     font-size: 3rem;
@@ -156,8 +167,9 @@ nav {
 
 .titleListBox {
     text-align: center;
-    padding-bottom: 2rem;
+    /* padding-bottom: 50px; */
     color: #E52323;
+    font-weight: bold;
 }
 
 .containerParagraphePage {
@@ -169,10 +181,11 @@ nav {
     /* padding-bottom: 300px; */
     /* margin: 500px 0px; */
 }
+
 .containerAccueil {
     width: 80%;
     height: 50vh;
-    padding-bottom: 550px;
+    padding-bottom: 40px;
     margin: auto;
 }
 
@@ -188,7 +201,7 @@ nav {
     /* background-color: rgb(206, 206, 192); */
     /* background-color: rgb(245, 246, 248); */
     /* background-color: #31363F; */
-    padding-bottom: 50px;
+    padding-bottom: 40px;
 }
 
 .containerCardBody {
@@ -198,17 +211,9 @@ nav {
     /* flex-wrap: wrap; */
 }
 
-@media all and (max-width: 991px) {
-    .containerCardBody {
-        /* padding-top: 2000px; */
-    }
-}
-
 .cardStyle {
-    width: 18rem;
-    height: 11rem;
-    /* box-shadow: 10px 5px 5px 5px #131416; */
-    box-shadow: 10px 5px 5px 5px #dde4f3;
+    /* box-shadow: 10px 5px 5px 5px #dde4f3; */
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .iconBoxeAmateur {
@@ -232,7 +237,13 @@ nav {
     width: 80%;
     height: 100%;
     margin: auto;
+
 }
+
+.boxCarrousel {
+    box-shadow: 0 25.6px 57.6px 0 rgb(0 0 0 / 22%), 0 4.8px 14.4px 0 rgba(227, 212, 212, 0.18);
+}
+
 
 @media all and (max-width: 1200px) {
     .containerCarrousel {
@@ -293,45 +304,59 @@ nav {
     }
 }
 
+@media all and (max-width: 1040px) {
+    .containerAccueil {
+        height: 500px;
+        /* height: 500px; */
+    }
+}
+
 @media all and (max-width: 745px) {
     .containerAccueil {
-        height: 600px;
+        height: 500px;
         /* height: 500px; */
     }
 }
 
 @media all and (max-width: 660px) {
     .containerAccueil {
-        height: 700px;
+        height: 550px;
     }
 
 }
 
 @media all and (max-width: 542px) {
     .containerAccueil {
-        height: 750px;
+        height: 600px;
     }
 
 }
 
-@media all and (max-width: 481px) {
+@media all and (max-width: 482px) {
     .containerAccueil {
-        height: 800px;
+        height: 650px;
     }
 
 }
 
 @media all and (max-width: 405px) {
     .containerAccueil {
-        height: 850px;
-    }
-
-    @media all and (max-width: 405px) {
-        .containerAccueil {
-            height: 900px;
-        }
+        height: 700px;
     }
 }
+
+@media all and (max-width: 356px) {
+    .containerAccueil {
+        height: 750px;
+    }
+}
+
+@media all and (max-width: 315px) {
+    .containerAccueil {
+        height: 800px;
+    }
+}
+
 
 /* FIN DE LA PAGE D'ACCUEIL */
 
@@ -425,7 +450,7 @@ nav {
     /* font-weight: 600; */
     line-height: 22px;
     color: #000;
-    /* max-height: 130vh; */
+    padding-top: 100px;
 }
 
 .titlePage {
@@ -683,37 +708,53 @@ nav {
         padding: 20px 20px;
     }
 }
+
 /* FIN PAGE CONTACT */
 
+/* debut page connexion */
+.containerConnexion {
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+
+/* fin page connexion */
 
 /* DEBUT PAGE imagePlanning */
 .containerPlanning {
     width: 60%;
     margin: auto;
 }
+
 .containerImgPlanning {
     text-align: center;
 }
+
 .imgPlanning {
     width: 70%;
     height: 100%;
     padding-bottom: 50px;
 }
+
 @media all and (max-width: 850px) {
     .imgPlanning {
         width: 100%;
-       
+
     }
+
     @media all and (max-width: 600px) {
         .imgPlanning {
             width: 100%;
-           
+
         }
     }
 }
+
 /* FIN PAGE ImagePlanning */
 
 /* DEBUT PAGE A PROPOS */
+.containerTitle {
+    padding-top: 100px;
+}
 
 .containerAPropos {
     font-family: "Play", sans-serif;
@@ -722,12 +763,21 @@ nav {
     width: 80%;
     margin: auto;
 }
+
+@media all and (max-width: 991px) {
+    .containerAPropos {
+        /* padding-top: 500px; */
+
+    }
+}
+
 .alignInscription {
     /* width: 100%;
     display: flex;
     flex-direction: column; */
     padding-bottom: 100px;
 }
+
 .sectionImportant {
     background-color: #EEEEEE;
     width: 70%;
@@ -747,6 +797,7 @@ nav {
     line-height: 27px;
     padding-bottom: 50px;
 }
+
 .accordionFaq {
     background-color: #616467;
 }
@@ -781,6 +832,7 @@ nav {
     margin: auto;
     padding-bottom: 50px;
 }
+
 
 
 .tarifRight {
@@ -942,6 +994,7 @@ nav {
     /* width: 100%; */
     height: 80vh;
     margin: auto;
+    padding-top: 100px;
 }
 
 
@@ -1012,6 +1065,7 @@ nav {
     padding-bottom: 100px;
     justify-content: center;
     align-items: center;
+    
 }
 
 .alignRow {
@@ -1023,12 +1077,16 @@ nav {
 .cardTeam {
     width: 280px;
     height: 100%;
-    box-shadow: black 5px 5px 5px;
+    /* box-shadow: black 5px 5px 5px; */
     margin: 20px;
     text-align: center;
+   
 }
 
-.cardImg {}
+.containerCardImg {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+   /* padding: 10px; */
+}
 
 .text {
     text-align: center;
@@ -1244,25 +1302,32 @@ nav {
 .containerText {
     padding-top: 100px;
 }
+
 .containerPratiquants {
     width: 80%;
     margin: auto;
 }
+
 .titlePratiquants {
     text-align: center;
     font-size: 2rem;
     font-weight: bold;
 }
+
 .paragraphePratiquants {
     text-align: center;
     font-size: 1.5rem;
 }
 
 @media all and (max-width: 991px) {
-    .titlePratiquants, .paragraphePratiquants, .containerText {
+
+    .titlePratiquants,
+    .paragraphePratiquants,
+    .containerText {
         display: none;
     }
 }
+
 /* FIN PAGE PRESENTATION DU CLUB */
 
 
@@ -1271,6 +1336,17 @@ nav {
     width: 80%;
     /* height: 230vh; */
     margin: auto;
+    padding-top: 100px;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid-item{
+    width: calc(33.33% - 10px); 
+    margin: 5px;
 }
 
 .containerParagrapheGalerie {
@@ -1287,24 +1363,24 @@ nav {
 }
 
 
-.containerGalerieImages {
+/* .containerGalerieImages {
     font-size: 3rem;
     padding: 2rem;
     text-align: center;
-}
+} */
 
-.img-containerGalerie {
+/* .img-containerGalerie {
     width: 100%;
     object-fit: cover;
-}
+} */
 
-.galerieImg {
+/* .galerieImg {
     display: block;
     width: 100%;
     padding: 10px;
 
-    /* height: 100%; */
-}
+    
+} */
 
 .overlay {
     position: absolute;
@@ -1369,13 +1445,14 @@ nav {
 
 .containerActualites {
     width: 100%;
+    padding-top: 100px;
     /* background-color: rgb(245,246,248); */
     /* background: red; */
 }
 
 .containerBackground {
-    width: 70%;
-    padding: 1.5rem;
+    width: 100%;
+    padding: 5rem;
     margin: auto;
     border-radius: 2px;
     background-color: white;
@@ -1466,6 +1543,7 @@ nav {
     cursor: pointer;
     box-sizing: border-box;
     padding: 10px;
+    
 }
 
 .cardStyleActu:hover {
@@ -1533,6 +1611,7 @@ nav {
     font-weight: 700;
     line-height: 1;
     transition: transform 200ms, background 200ms;
+    
 
     :hover {
         transform: translateY(-2px);
@@ -1580,6 +1659,36 @@ nav {
     }
 }
 
+
+.bodyCard {
+    background-color: #f5f7fa;
+  }
+  
+  .fas.fa-heart:hover {
+    color: #f44336 !important;
+  }
+  
+  .fas.fa-share-alt:hover {
+    color: #0d47a1 !important;
+  }
+
+.imgActu {
+    /* padding: 100px; */
+}
+.nameActu {
+    font-size: 1.5rem;
+    color: #000;
+    font-family: 'Baumans', system-ui;
+    text-align: center;
+}
+.paraActu {
+    font-size: 1.2rem;
+    color: rgb(151, 17, 17);
+    font-family: 'Baumans', system-ui;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+}
 /* FIN PAGE ACTUALITES */
 /* RESPONSIVE */
 
@@ -1650,3 +1759,4 @@ nav {
         /* padding-bottom: 240vh; */
     }
 }
+
