@@ -8,7 +8,8 @@ function insertMsg($pdo, $date_creation, $nom, $prenom, $objet, $email, $msg)
     $reqInsertMsg->execute([$date_creation, $nom, $prenom, $objet, $email, $msg]);
 }
 
-function getAllMsg($pdo) {
+function getAllMsg($pdo)
+{
     $reqRecupAllMsg = $pdo->prepare('SELECT * FROM messages');
     $reqRecupAllMsg->execute([]);
     $listeMsg = $reqRecupAllMsg->fetchAll();
@@ -26,6 +27,7 @@ function getAllActualites($pdo)
 
     return $listeActualites;
 }
+
 function getActualite($pdo, $idActualite)
 {
     $reqInsertActualite = $pdo->prepare('SELECT * FROM actualite WHERE id_actualite = ?');
@@ -57,4 +59,22 @@ function getImagesActu($pdo, $idActualite)
     $imageActu = $reqImageActu->fetchAll();
 
     return $imageActu;
+}
+
+
+// fonction pour récup les actualités
+function getAllCompetitor($pdo)
+{
+    $reqInsertCompetitor = $pdo->prepare(
+        'SELECT *
+        FROM competiteur
+        LEFT JOIN images
+        ON competiteur.id_competiteur = images.id_competiteur
+        LEFT JOIN resultat
+        ON competiteur.id_competiteur = resultat.id_competiteur;'
+    );
+    $reqInsertCompetitor->execute([]);
+    $listeCompetitors = $reqInsertCompetitor->fetchAll();
+
+    return $listeCompetitors;
 }

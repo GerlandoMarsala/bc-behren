@@ -10,30 +10,28 @@ $date = $_POST['date'];
 if (!empty($_POST)) {
     // echo 'hello';
     if (!empty($_FILES['photos']['name'])) {
-    
+
         if (insertFiles()) {
             insertActualite($pdo, $nomActualite, $description, $date);
             $idActualite = $pdo->lastInsertId();
-            // $chemin correspond à $nomImage dans fonction.php
+            // $nom correspond à $nomImage dans fonction.php
             createImage($pdo, $nom, $idActualite);
-        }else{
-            $image = 'bcb-logo.jpeg'; 
-            
+        } else {
+            $image = 'bcb-logo.jpeg';
             insertActualite($pdo, $nomActualite, $description, $date);
             $idActualite = $pdo->lastInsertId();
             createImage($pdo, $image, $idActualite);
         }
-    }else {
+    } else {
 
         insertActualite($pdo, $nomActualite, $description, $date);
         $idActualite = $pdo->lastInsertId();
-        $image = 'bcb-logo.jpeg'; 
+        $image = 'bcb-logo.jpeg';
         createImage($pdo, $image, $idActualite);
-        
+
     }
 }
 header('location:../public/index.php?page=2');
-
 
 
 function insertFiles()
@@ -59,6 +57,6 @@ function insertActualite($pdo, $nomActualite, $description, $date)
         && !empty($_POST['nomActualite']) && !empty($_POST['description']) && !empty($_POST['date'])
     ) {
         // insérer l'actualité
-       createActualite($pdo, $nomActualite, $description, $date);
+        createActualite($pdo, $nomActualite, $description, $date);
     }
 }

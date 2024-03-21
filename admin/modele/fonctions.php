@@ -11,7 +11,12 @@ function createImage($pdo, $nomImage, $idActualite)
 {
     $reqInsertActualite = $pdo->prepare('INSERT INTO images(nom_images, id_actualite) VALUES(?,?)');
     $reqInsertActualite->execute([$nomImage, $idActualite]);
+}
 
+function createImageWithCompetitor($pdo, $nomImage, $idCompetiteur)
+{
+    $reqInsertActualite = $pdo->prepare('INSERT INTO images(nom_images, id_competiteur) VALUES(?,?)');
+    $reqInsertActualite->execute([$nomImage, $idCompetiteur]);
 }
 
 // fonction pour récup les actualités
@@ -53,6 +58,11 @@ function updateImage($pdo, $nomImage, $idActualite)
     $reqInsertActualite->execute([$nomImage, $idActualite]);
 }
 
+function updateImageWithCompetitor($pdo, $nomImage, $idCompetiteur)
+{
+    $reqInsertActualite = $pdo->prepare('UPDATE images SET nom_images = ? WHERE id_competiteur = ?');
+    $reqInsertActualite->execute([$nomImage, $idCompetiteur]);
+}
 
 function deleteActualite($pdo, $idActualite)
 {
@@ -78,7 +88,8 @@ function getImagesActu($pdo, $idActualite)
 
 
 // messages
-function getAllMsg($pdo) {
+function getAllMsg($pdo)
+{
     $reqRecupAllMsg = $pdo->prepare('SELECT * FROM messages');
     $reqRecupAllMsg->execute([]);
     $listeMsg = $reqRecupAllMsg->fetchAll();
@@ -87,13 +98,85 @@ function getAllMsg($pdo) {
 }
 
 // competiteurs
-function createCompetiteur($pdo, $nom, $prenom, $pro)
+function createCompetiteur($pdo, $nom, $prenom, $pro, $categorie, $poids)
 {
-    $reqInsertCompetiteur = $pdo->prepare('INSERT INTO competiteur(nom, prenom, pro) VALUES(?,?,?)');
-    $reqInsertCompetiteur->execute([$nom, $prenom, $pro]);
-
+    $reqInsertCompetiteur = $pdo->prepare('INSERT INTO competiteur(nom, prenom, pro, categorie, poids) VALUES(?,?,?, ?, ?)');
+    $reqInsertCompetiteur->execute([$nom, $prenom, $pro, $categorie, $poids]);
 }
 
+function createResultat($pdo, $idCompetiteur)
+{
+    $reqInsertResultat = $pdo->prepare('INSERT INTO resultat(victoire, defaite, combat_nul, id_competiteur) VALUES(?,?,?,?)');
+    $reqInsertResultat->execute([0, 0, 0, $idCompetiteur]);
+}
+
+
+// fonction pour récup les actualités
+function getAllCompetitor($pdo)
+{
+    $reqInsertCompetitor = $pdo->prepare(
+        'SELECT *
+        FROM competiteur
+        LEFT JOIN images
+        ON competiteur.id_competiteur = images.id_competiteur
+        LEFT JOIN resultat
+        ON competiteur.id_competiteur = resultat.id_competiteur;'
+    );
+    $reqInsertCompetitor->execute([]);
+    $listeCompetitors = $reqInsertCompetitor->fetchAll();
+
+    return $listeCompetitors;
+}
+
+
+function getCompetitorById($pdo, $idCompetiteur)
+{
+
+    $sql = 'SELECT competiteur.*, images.*, resultat.*
+    FROM competiteur
+    LEFT JOIN images
+    ON competiteur.id_competiteur = images.id_competiteur
+    LEFT JOIN resultat
+    ON competiteur.id_competiteur = resultat.id_competiteur
+    WHERE competiteur.id_competiteur = ?';
+
+    $reqGetCompetitor = $pdo->prepare($sql);
+
+    $reqGetCompetitor->execute([$idCompetiteur]);
+    $competiteur = $reqGetCompetitor->fetch();
+
+    return $competiteur;
+}
+
+function updateCompetiteur($pdo, $nom, $prenom, $pro, $categorie, $poids, $idCompetiteur)
+{
+    $reqUpdateCompetiteur = $pdo->prepare('UPDATE competiteur SET nom = ?, prenom = ?, pro = ? , categorie = ?, poids= ? WHERE id_competiteur = ?');
+    $reqUpdateCompetiteur->execute([$nom, $prenom, $pro, $categorie, $poids, $idCompetiteur]);
+}
+
+function updateResultat($pdo, $victoire, $defaite, $combatNul, $idCompetiteur)
+{
+    $reqUpdateCompetiteur = $pdo->prepare('UPDATE resultat SET victoire = ?, defaite = ?, combat_nul = ? WHERE id_competiteur = ?');
+    $reqUpdateCompetiteur->execute([$victoire, $defaite, $combatNul, $idCompetiteur]);
+}
+
+function deleteCompetitor($pdo, $idCompetiteur)
+{
+    $reqInsertActualite = $pdo->prepare('DELETE FROM competiteur WHERE id_competiteur = ?');
+    $reqInsertActualite->execute([$idCompetiteur]);
+}
+
+function deleteImagesWithCompetitor($pdo, $idCompetiteur)
+{
+    $reqInsertActualite = $pdo->prepare('DELETE FROM images WHERE id_competiteur = ?');
+    $reqInsertActualite->execute([$idCompetiteur]);
+}
+
+function deleteResultat($pdo, $idCompetiteur)
+{
+    $reqInsertActualite = $pdo->prepare('DELETE FROM resultat WHERE id_competiteur = ?');
+    $reqInsertActualite->execute([$idCompetiteur]);
+}
 
 
 
