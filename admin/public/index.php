@@ -73,12 +73,13 @@ if (isset($_GET['page'])) {
     if ($_GET['page'] == 8) {
         include("../vue/modif_competiteur.php");
     }
-    if ($_GET['page'] == 8) {
-        include("../vue/modif_competiteur.php");
-    }
     if ($_GET['page'] == 9) {
         include("../vue/supp_competiteur.php");
     }
+    if ($_GET['page'] == 10) {
+        include("../controller/traitement_supp_actualite.php");
+    }
+    
 
 }
 // include("../vue/footer.php");

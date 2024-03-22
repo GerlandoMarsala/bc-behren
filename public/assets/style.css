@@ -132,6 +132,10 @@ nav {
     .open .menu {
         transform: translateX(0);
     }
+    .buttonSize {
+        font-size: 1.8rem;
+        /* border: none; */
+    }
 }
 
 

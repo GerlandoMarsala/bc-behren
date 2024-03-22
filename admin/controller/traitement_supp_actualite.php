@@ -5,6 +5,7 @@ require '../../modele/connexionBdd.php';
 
 $idActualite = $_GET['id_actualite'];
 
+
 echo "fonctionneeee" . $idActualite;
 if (isset($_GET['id_actualite']) && !empty($_GET['id_actualite'])) {
 

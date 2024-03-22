@@ -14,7 +14,7 @@
         <ul class="menu">
             <li><a href="index.php?page=1">ACCUEIL</a></li>
             <div class="dropdown">
-                <button class="btn btn-secondary bg-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <button class="btn btn-secondary bg-black dropdown-toggle buttonSize" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                     LE CLUB
                 </button>
                 <ul class="dropdown-menu bg-dark">

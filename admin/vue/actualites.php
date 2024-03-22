@@ -66,7 +66,7 @@ $listeActualites = getAllActualites($pdo);
                             <a href="index.php?page=4&id_actualite=<?php echo htmlspecialchars($actualite['id_actualite'], ENT_QUOTES, 'UTF-8'); ?>"><i class="fa-solid fa-pen text-dark"></i>
                         </td>
                         <td>
-                            <a href="index.php?traitement_supp_actualite.php&id_actualite=<?php echo htmlspecialchars($actualite['id_actualite'], ENT_QUOTES, 'UTF-8'); ?>"><i class="fa-solid fa-trash text-dark"></i>
+                            <a href="index.php?page=10traitement_supp_actualite.php&id_actualite=<?php echo htmlspecialchars($actualite['id_actualite'], ENT_QUOTES, 'UTF-8'); ?>"><i class="fa-solid fa-trash text-dark"></i>
                         </td>
                     </tr>
 

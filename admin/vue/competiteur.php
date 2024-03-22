@@ -85,7 +85,7 @@ $listeCompetiteurs = getAllCompetitor($pdo);
                                     class="fa-solid fa-pen text-dark"></i>
                     </td>
                     <td>
-                        <a href="index.php?page=9&&id_competiteur=<?php echo htmlspecialchars($competieur['id_competiteur'], ENT_QUOTES, 'UTF-8'); ?>"><i
+                        <a href="index.php?page=9&id_competiteur=<?php echo htmlspecialchars($competieur['id_competiteur'], ENT_QUOTES, 'UTF-8'); ?>"><i
                                     class="fa-solid fa-trash text-dark"></i>
                     </td>
                 </tr>
