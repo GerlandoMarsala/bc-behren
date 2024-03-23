@@ -9,8 +9,8 @@
 
             <ul class="listeFooter">
                 <h5>LE CLUB</h5>
-                <li>Qui sommes-nous ?</li>
-                <li>Horaires et tarifs</li>
+                <li><a href="../public/index.php?page=4" class="linkWhite">Qui sommes-nous ?</a></li>
+                <li><a href="../public/index.php?page=3" class="linkWhite">Horaires et tarifs</a></li>
             </ul>
 
             <ul class="listeFooter">
@@ -26,7 +26,7 @@
             <div class="secondContainerFooter">
                 <li>Politique de confidentialité</li>
                 <li>Mentions légales / RGPD</li>
-                <li>Réseaux sociaux</li>
+                <li><a href="https://www.facebook.com/pigaboxingbehren" class="linkWhite">Réseaux sociaux</a></li>
             </div>
         </ul>
 

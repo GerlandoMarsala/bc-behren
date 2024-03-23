@@ -37,7 +37,7 @@ $actualite = getActualite($pdo, $idActualite);
                                 <p class="card-text secondTitleActu">Retour à l'entrainement pour les compétiteurs du BC Behren</p>
                             </div> -->
                         </div>
-                        <p class="paragrapheJustify"><?php echo htmlspecialchars($actualites['description'], ENT_QUOTES, 'UTF-8'); ?></p>
+                        <p class="paragrapheJustify"><?php echo htmlspecialchars($actualite['description'], ENT_QUOTES, 'UTF-8'); ?></p>
                     </div>
                     <!-- <div class="containerParagrapheActualites">
                         <h2 class="text-center py-5 titleStyle">La saison 2023-2024</h2>

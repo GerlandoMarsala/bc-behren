@@ -5,137 +5,6 @@
 </div>
 
 
-
-<!-- <div class="containerInscription"> -->
-
-<!-- <div class="containerAPropos">
-
-
-  <h2 data-aos="fade-up" data-aos-duration="1500" class="text-center my-3 titleStyle">INSCRIPTION AU CLUB</h2>
-  <div data-aos="fade-up" data-aos-duration="1500" class="containerSection">
-
-
-    <div class="paragrapheAPropos">
-      <p class="paragrapheJustify">Vous souhaitez vous inscrire au Boxing Club Behren ? C'est simple ! Il vous suffit de vous rendre directement au club et de vous adresser à notre coach, M. Joseph Callerame. Il sera ravi de vous accueillir et de vous guider à travers le processus d'inscription.</br></br>Rejoignez-nous dès maintenant pour découvrir tout ce que notre club a à offrir en termes de boxe et de remise en forme !</p>
-    </div>
-
-    <div class="containerBackground" data-aos="fade-up" data-aos-duration="1500">
-      <div class="containerParagrapheImportant">
-        <h2 data-aos="fade-up" data-aos-duration="1500" class="text-center my-2 text-danger">IMPORTANT</h2>
-        <ul data-aos="fade-up" data-aos-duration="1800">
-          <li>
-            <p class="paragrapheJustify paragrapheImportant">Pour des raisons de sécurité, conformément à nos exigences en matière d'assurance, nous permettrons à un nouveau membre sans licence de participer à un seul entraînement. Après cette période, nous serons contraints de lui refuser l'accès à la salle.</p>
-          </li>
-          <li>
-            <p class="paragrapheJustify paragrapheImportant">Un examen médical est requis pour obtenir une licence (encadré à remplir par le médecin au verso de la licence). Pour ceux qui envisagent de participer à des compétitions, un examen ophtalmologique sera nécessaire.
-            </p>
-          </li>
-        </ul>
-
-      </div>
-    </div>
-  </div>
-
-  <div class="row py-5">
-
-    <div class="col-md-6 col-sm-12">
-      <div class="borderStylePage"></div>
-      <h2 data-aos="fade-up" data-aos-duration="1500" class="text-center my-3 titleStyle">MATERIELS</h2>
-      <div data-aos="fade-up" data-aos-duration="1500" class="containerSection">
-        <div class="borderLeft"></div>
-        <div class="containerParagrapheInscription">
-          <p class="paragrapheJustify">Pour pratiquer la boxe anglaise au sein de notre club, il est essentiel de venir équipé d'une tenue de sport classique, comprenant des vêtements confortables et des chaussures adaptées. De plus, il est impératif d'avoir des bandes, des gants de boxe et un protège-dents pour assurer votre sécurité pendant les entraînements et les combats.
-
-            Bien que le club fournisse le matériel nécessaire pour les séances d'essai, il est fortement recommandé d'investir dans votre propre équipement. Non seulement cela garantit une meilleure hygiène personnelle, mais cela assure également un ajustement optimal pour votre confort et votre performance. Avoir son propre équipement vous permet également de vous habituer à son utilisation et de vous sentir plus confiant lors de vos sessions d'entraînement.
-
-            En somme, venir avec votre propre équipement de boxe est non seulement une question d'hygiène, mais aussi de confort et de sécurité. Alors, préparez-vous avec votre propre équipement et soyez prêt à relever tous les défis sur le ring !</p>
-
-          <div class="row alignRow ">
-            <div data-aos="fade-down-right" data-aos-duration="1500" class="cardTeam col-lg-6 col-md-6 col-sm-12 p-1">
-              <div class="cardImg">
-                <img class="card-img-top" src="assets/img/materielsBoxe2.jpg" alt="Card image cap">
-                <div class="text textLicence">
-                </div>
-              </div>
-            </div>
-
-
-
-
-            <div data-aos="fade-down-right" data-aos-duration="1500" class="cardTeam col-lg-6 col-md-6 col-sm-12 p-1">
-              <div class="cardImg">
-                <img class="card-img-top" src="assets/img/materielsBoxe.jpg" alt="Card image cap">
-                <div class="text textLicence">
-                </div>
-              </div>
-
-            </div>
-
-
-
-
-          </div>
-
-
-
-        </div>
-
-      </div>
-    </div>
-
-
-    <div class="col-md-6 col-sm-12">
-      <div class="borderStylePage"></div>
-      <h2 data-aos="fade-up" data-aos-duration="1500" class="text-center my-3 titleStyle">TARIFS</h2>
-      <div data-aos="fade-up" data-aos-duration="1500" class="containerSection">
-
-        <div class="containerParagrapheInscription">
-          <p class="paragrapheJustify">Au sein du Boxing Club Behren, nous proposons des tarifs de licence adaptés à différents niveaux de pratique. Pour les amateurs et les passionnés qui souhaitent s'engager dans la boxe en tant que loisir, le tarif de la licence est de 100€. Cette licence offre un accès complet à nos installations et à nos cours, ainsi qu'une immersion totale dans l'ambiance dynamique de notre club.
-
-            Quant aux programmes éducatifs destinés aux plus jeunes et à ceux qui cherchent à découvrir la discipline dans un cadre plus axé sur l'apprentissage, le tarif de la licence est de 70€. Cette formule offre une introduction progressive à la boxe, mettant l'accent sur les techniques de base, la discipline et le plaisir de pratiquer ce sport.
-
-            Que vous soyez un amateur passionné ou un débutant enthousiaste, le Boxing Club Behren vous offre la possibilité de vous engager à votre propre rythme, avec des tarifs de licence adaptés à vos besoins et à vos objectifs. Rejoignez-nous dès maintenant et découvrez tout ce que la boxe a à offrir en termes de forme physique, de confiance en soi et de camaraderie sportive !</p>
-
-          <div class="row alignRow ">
-            <div data-aos="fade-down-right" data-aos-duration="1500" class="cardTeam col-lg-6 col-md-6 col-sm-12 p-1">
-              <div class="cardImg">
-              
-                <div class="text textLicence">
-                  <h2 class="name border"><span class="nameEducatif">E</span>ducatif</h2>
-                  <p class="ageLicence">de 6 à 12 ans</p>
-                  <p class="tarif">Tarif : 70 €</p>
-                </div>
-              </div>
-            </div>
-
-
-
-
-            <div data-aos="fade-down-right" data-aos-duration="1500" class="cardTeam col-lg-6 col-md-6 col-sm-12 p-1">
-              <div class="cardImg">
-                <div class="text textLicence">
-                  <h2 class="name border"><span class="nameLoisirAmateur">L</span>oisir & Amateur</h2>
-                  <p class="ageLicence">à partir de 12 ans</p>
-                  <p class="tarif">Tarif : 100 €</p>
-                </div>
-              </div>
-
-            </div>
-
-
-
-
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-  </div>
-
-
-</div> -->
-
 <div class="containerAPropos">
   <h2 data-aos="fade-up" data-aos-duration="1500" class="text-center my-5 titleStyle">INSCRIPTION AU CLUB</h2>
   <div class="containerParagraphePage">
@@ -156,19 +25,6 @@
 
 </div>
 
-<!-- <div class="sectionImportant">
-  <h3 data-aos="fade-up" data-aos-duration="1500" class="text-center my-2 text-danger">IMPORTANT</h3>
-  <div class="row" fade-up data-aos-duration="1800">
-    <div class="col-lg-6">
-      <p class="">Pour des raisons de sécurité, conformément à nos exigences en matière d'assurance, nous permettrons à un nouveau membre sans licence de participer à un seul entraînement. Après cette période, nous serons contraints de lui refuser l'accès à la salle.</p>
-    </div>
-    <div class="col-lg-6">
-      <p class="">Un examen médical est requis pour obtenir une licence (encadré à remplir par le médecin au verso de la licence). Pour ceux qui envisagent de participer à des compétitions, un examen ophtalmologique sera nécessaire.
-      </p>
-    </div>
-
-</div>
-</div> -->
 <hr class="border-black">
 
 
@@ -294,8 +150,26 @@
         </button>
       </h2>
       <div id="collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-        <div class="accordion-body text-white">
-          <a href="index.php?page=6">Cliquez-ici pour voir les horaires d'entraînements du BC Behren</a>
+        <div class="accordion-body text-black">
+          <!-- <a href="index.php?page=6">Cliquez-ici pour voir les horaires d'entraînements du BC Behren</a> -->
+
+          <div class="row text-center">
+            <div class="col-lg-6">
+              <p><strong>Boxe Educative :</strong></p>
+              <ul class="listHoraires">
+                <li>Mercredi: 18h - 19h.</li>
+              </ul>
+            </div>
+            <div class="col-lg-6">
+              <p><strong>Boxe Loisir, Amateur, Pro :</strong></p>
+              <ul class="listHoraires">
+                <li>Lundi 19h15 - 21h</li>
+                <li>Mercredi 19h - 20h30</li>
+                <li>Vendredi 19h - 20h30</li>
+                <li>Samedi 10h - 11h30</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>

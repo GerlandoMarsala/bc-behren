@@ -2,17 +2,17 @@
 <section class="logo-bc-behren">
 
 </section> 
-<div class="container">
+<div class="container mt-3">
   <h1 class="titleAccueil py-3">BOXING CLUB BEHREN</h1>
   <!-- <h2 class="titleListBox">BOXE EDUCATIVE <span class="colorTitleBoxeLoisir">- BOXE LOISIR -</span> BOXE AMATEUR</h2> -->
 
-    <p class="paragrapheJustify">Créé dans les années 1960, le Boxing Club Behren est une école de boxe anglaise reconnu dans la Moselle.
+    <p class="paragrapheJustify fontParagraphe">Créé dans les années 1960, le Boxing Club Behren est une école de boxe anglaise reconnu dans la Moselle.
       Occupant les locaux municipaux du COSEC de Behrèn-Lès-Forbach, le club prône depuis ses débuts des valeurs tel que la volonté, le courage, et la discipline. </br></br>
       Depuis plusieurs années, le club à pu obtenir de nombreux titres départementaux, régionnaux, et nationaux, prouvant le sérieux du staff technique, dirigée par le Président M. Christian PIGA.
     </p>
 </div>
 
-<div class="containerCard">
+<div class="containerCard mt-3">
 
   <h3 class="titleCard">DEVENEZ ADHÉRENT DU BC BEHREN</h3>
   <div class="border border-black w-50 mx-auto my-3"></div>

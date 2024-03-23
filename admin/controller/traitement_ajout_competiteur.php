@@ -32,7 +32,8 @@ if (!empty($_POST)) {
         createResultat($pdo, $idCompetiteur);
         $image = 'bcb-logo.jpeg';
         createImageWithCompetitor($pdo, $image, $idCompetiteur);
-    }
+    } 
+    header('Location:../public/index.php?page=6');
 }
 
 

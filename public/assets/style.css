@@ -182,8 +182,6 @@ nav {
     font-weight: 400;
     font-style: normal;
     line-height: 27px;
-    /* padding-bottom: 300px; */
-    /* margin: 500px 0px; */
 }
 
 .containerAccueil {
@@ -196,6 +194,10 @@ nav {
 
 .paragrapheJustify {
     text-align: justify;
+}
+.fontParagraphe {
+    font-family: "Play", sans-serif;
+    font-size: 1.3rem;
 }
 
 .containerCard {
@@ -373,7 +375,6 @@ nav {
     padding: 0 50px;
     font-family: 'Baumans', system-ui;
 }
-
 .footerBloc {
     display: flex;
     justify-content: space-between;
@@ -386,7 +387,10 @@ nav {
     list-style-type: none;
     height: 70px;
     padding: 0;
-
+}
+.linkWhite {
+    text-decoration: none;
+    color: white;
 }
 
 .listeFooter li {
@@ -463,6 +467,14 @@ nav {
     font-weight: bold;
     letter-spacing: 1px;
     font-size: 3rem;
+    font-family: Baumans;
+}
+.titlePageActu {
+    text-align: center;
+    padding: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 2.5rem;
     font-family: Baumans;
 }
 
@@ -804,6 +816,9 @@ nav {
 
 .accordionFaq {
     background-color: #616467;
+}
+.listHoraires {
+list-style-type: none;
 }
 
 
@@ -1352,6 +1367,9 @@ nav {
     width: calc(33.33% - 10px); 
     margin: 5px;
 }
+.clickable-image:hover {
+    transform: scale(1.1);
+}
 
 .containerParagrapheGalerie {
     font-family: "Play", sans-serif;
@@ -1365,26 +1383,9 @@ nav {
 .paragrapheGalerie {
     padding-bottom: 50px;
 }
-
-
-/* .containerGalerieImages {
-    font-size: 3rem;
-    padding: 2rem;
-    text-align: center;
-} */
-
-/* .img-containerGalerie {
-    width: 100%;
-    object-fit: cover;
-} */
-
-/* .galerieImg {
-    display: block;
-    width: 100%;
-    padding: 10px;
-
-    
-} */
+.imgStyle {
+    border-radius: 5px;
+}
 
 .overlay {
     position: absolute;
@@ -1396,7 +1397,7 @@ nav {
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background-color: rgba(255, 255, 255, 0.9);
+    /* background-color: rgba(255, 255, 255, 0.9); */
 }
 
 .caption {
@@ -1438,6 +1439,26 @@ nav {
 
 .policeCompetiteur {
     font-family: 'I AM A PLAYER', sans-serif;
+}
+.cardCompetiteur {
+    background-color: #131416;
+    color: #E6E6E6;
+    border-radius: 2px;
+    font-weight: 500;
+}
+.titlePageCompetiteur {
+    text-align: center;
+    padding: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 2.5rem;
+    font-family: Baumans;
+}
+
+.styleDescriptionBoxer {
+    font-family: Poppins, Arial, sans-serif;
+    /* font-family: 'Baumans', system-ui; */
+    text-transform: uppercase;
 }
 
 /* FIN PAGE COMPÉTITEUR */
@@ -1496,6 +1517,13 @@ nav {
 
 .imgOpacity {
     opacity: 0.4;
+}
+.linkActu {
+    text-decoration: none;
+    color: black;
+}
+.linkActu:hover {
+    color: white;
 }
 
 .containerParagrapheActualites {
