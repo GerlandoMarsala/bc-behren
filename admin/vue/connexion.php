@@ -1,13 +1,4 @@
-<!-- PAGE CONNEXION -->
-<?php
 
-session_start();
-
-if (isset($_SESSION['idUser'])) {
-  header('Location:../../public/index.php?page=1');
-}
-
-?>
 
 <section class="vh-75 containerConnexion">
   <div class="container h-100">
@@ -40,8 +31,17 @@ if (isset($_SESSION['idUser'])) {
                 </div>
 
                 <button class="btn btn-lg btn-primary btn-block btn btn-dark rounded-rounded mt-4 justify-content-end" type="submit">Connexion</button>
-                <p class="mt-3"><a href="../public/index.php?page=7" style="text-decoration:none" class="fw-bold fw-italic text-black">Mot de passe oublié ?</a></p>
-                <p class="mt-4 text-dark">Vous n'avez pas encore de compte ?<a href="../public/index.php?page=4" style="text-decoration:none" class="fw-bold text-black"> Créez en un ici !</a></p>
+
+                <?php
+                if (isset($_GET['erreur'])){
+                    if ($_GET['erreur'] == 'identifiants') {
+                      echo '<p class="erreur">Identifiant incorrect</p>';
+                    }
+                    
+                }
+                ?>
+                <!-- <p class="mt-3"><a href="../public/index.php?page=7" style="text-decoration:none" class="fw-bold fw-italic text-black">Mot de passe oublié ?</a></p> -->
+                <!-- <p class="mt-4 text-dark">Vous n'avez pas encore de compte ?<a href="../public/index.php?page=4" style="text-decoration:none" class="fw-bold text-black"> Créez en un ici !</a></p> -->
                 </form>
 
               </div>

@@ -36,7 +36,7 @@ $listeMsg = getAllMsg($pdo);
                     <th>Email</th>
                     <th>Messages</th>
                     <th>Traiter</th>
-                    <th>Modifier</th>
+                    <th>Voir plus</th>
                     <th>Supprimer</th>
                 </tr>
             </thead>
@@ -73,14 +73,14 @@ $listeMsg = getAllMsg($pdo);
                             <p><?php echo htmlspecialchars($msg['traite'], ENT_QUOTES, 'UTF-8'); ?></p>
                         </td>
                         <td>
-                            <a href="index.php?page=4&id_messages=<?php echo htmlspecialchars($msg['id_messages'], ENT_QUOTES, 'UTF-8'); ?>"><i class="fa-solid fa-pen text-dark"></i>
+                        <a href="../public/index.php?page=9&<?php echo $msg['id_messages']; ?>"><i class="fa-solid fa-eye text-dark"></i>
                         </td>
                         <td>
-                            <a href="index.php?traitement_supp_messages.php&id_messages=<?php echo htmlspecialchars($msg['id_messages'], ENT_QUOTES, 'UTF-8'); ?>"><i class="fa-solid fa-trash text-dark"></i>
+                            <a href="../controller/traitement_supp_messages.php?id_message=<?php echo $msg['id_messages']; ?>"><i class="fa-solid fa-trash text-dark"></i>
                         </td>
                     </tr>
-
-
+                    <p class="text-mute mb-0">
+                            
                 <?php
                 }
                 ?>

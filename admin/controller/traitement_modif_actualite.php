@@ -1,5 +1,4 @@
 <?php
-session_start();
 require '../modele/fonctions.php';
 require '../../modele/connexionBdd.php';
 

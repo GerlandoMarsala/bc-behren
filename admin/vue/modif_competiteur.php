@@ -24,8 +24,7 @@ $competiteur = getCompetitorById($pdo, $idCompetiteur);
 
         <form method="post" action="../controller/traitement_modif_competiteur.php" enctype="multipart/form-data">
             <!--  ID ACTUALITE   -->
-            <input type="number" name="id_competiteur"
-                   value="<?php echo htmlspecialchars($idCompetiteur, ENT_QUOTES, 'UTF-8'); ?>" hidden="true">
+            <input type="hidden" name="id_competiteur" value="<?php echo htmlspecialchars($idCompetiteur, ENT_QUOTES, 'UTF-8'); ?>">
             <!--  ID IMAGES   -->
             <input type="number" name="id_images"
                    value="<?php echo htmlspecialchars($competiteur['id_images'], ENT_QUOTES, 'UTF-8'); ?>"

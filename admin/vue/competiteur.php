@@ -35,7 +35,7 @@ $listeCompetiteurs = getAllCompetitor($pdo);
                 <th>Image</th>
                 <th>Nom</th>
                 <th>Prénom</th>
-                <th>Amateur ou Pro</th>
+                <th>Amateur/Pro</th>
                 <th>Victoire</th>
                 <th>Défaite</th>
                 <th>Nul</th>
@@ -44,58 +44,63 @@ $listeCompetiteurs = getAllCompetitor($pdo);
             </tr>
             </thead>
             <tbody>
-            <?php foreach ($listeCompetiteurs as $competieur) { ?>
+            <?php foreach ($listeCompetiteurs as $competiteur) { ?>
                 <tr>
                     <td>
                         <div class="ms-3">
                             <p class="fw-bold mb-1">
-                                <?php echo $competieur['id_competiteur']; ?>
+                                <?php echo $competiteur['id_competiteur']; ?>
                             </p>
                         </div>
                     </td>
                     <td>
                         <div class="d-flex align-items-center">
-                            <img src="<?php echo '../../public/assets/img/' . htmlspecialchars($competieur['nom_images'], ENT_QUOTES, 'UTF-8'); ?>"
+                            <img src="<?php echo '../../public/assets/img/' . htmlspecialchars($competiteur['nom_images'], ENT_QUOTES, 'UTF-8'); ?>"
                                  alt="" style="width: 45px; height: 45px" class="rounded-circle"/>
                         </div>
                     </td>
                     <td>
                         <div class="ms-3">
-                            <p class="fw-bold mb-1"><?php echo $competieur['nom']; ?></p>
+                            <p class="fw-bold mb-1"><?php echo $competiteur['nom']; ?></p>
                         </div>
                     </td>
                     <td>
-                        <p class="fw-normal mb-1"><?php echo htmlspecialchars($competieur['prenom'], ENT_QUOTES, 'UTF-8'); ?></p>
+                        <p class="fw-normal mb-1"><?php echo htmlspecialchars($competiteur['prenom'], ENT_QUOTES, 'UTF-8'); ?></p>
                     </td>
 
                     <td>
-                        <p class="text-mute mb-0"><?php echo htmlspecialchars($competieur['pro'], ENT_QUOTES, 'UTF-8'); ?></p>
+                        <p class="text-mute mb-0">
+                            <?php
+                            if($competiteur['pro']){
+                                $rang = "Pro";
+                            }else{
+                                $rang = "Amateur";
+                            }
+                            
+                            echo $rang; ?>
+                        </p>
                     </td>
                     <td>
-                        <p><?php echo htmlspecialchars($competieur['victoire'], ENT_QUOTES, 'UTF-8'); ?></p>
+                        <p><?php echo htmlspecialchars($competiteur['victoire'], ENT_QUOTES, 'UTF-8'); ?></p>
                     </td>
                     <td>
-                        <p><?php echo htmlspecialchars($competieur['defaite'], ENT_QUOTES, 'UTF-8'); ?></p>
+                        <p><?php echo htmlspecialchars($competiteur['defaite'], ENT_QUOTES, 'UTF-8'); ?></p>
                     </td>
                     <td>
-                        <p><?php echo htmlspecialchars($competieur['combat_nul'], ENT_QUOTES, 'UTF-8'); ?></p>
+                        <p><?php echo htmlspecialchars($competiteur['combat_nul'], ENT_QUOTES, 'UTF-8'); ?></p>
                     </td>
                     <td>
-                        <a href="index.php?page=8&id_competiteur=<?php echo htmlspecialchars($competieur['id_competiteur'], ENT_QUOTES, 'UTF-8'); ?>"><i
+                        <a href="index.php?page=8&id_competiteur=<?php echo $competiteur['id_competiteur']; ?>"><i
                                     class="fa-solid fa-pen text-dark"></i>
                     </td>
                     <td>
-                        <a href="index.php?page=9&id_competiteur=<?php echo htmlspecialchars($competieur['id_competiteur'], ENT_QUOTES, 'UTF-8'); ?>"><i
-                                    class="fa-solid fa-trash text-dark"></i>
+                        <a href="../controller/traitement_supp_competiteur.php?id_competiteur=<?php echo $competiteur['id_competiteur']; ?>"><i class="fa-solid fa-trash text-dark"></i>
                     </td>
                 </tr>
-
-
                 <?php
             }
             ?>
             </tbody>
         </table>
     </div>
-
-</div>
+</div> 

@@ -61,6 +61,7 @@
                     <input type="file" name="photos" class="form-control" id="inputGroupFile01">
                 </div>
                 <button class="buttonActu" type="submit" class="buttonActu2">Valider</button>
+                <?php header('location:../public/index.php?page=6'); ?>
             </div>
 
         </form>

@@ -156,6 +156,7 @@ function updateCompetiteur($pdo, $nom, $prenom, $pro, $categorie, $poids, $idCom
 
 function updateResultat($pdo, $victoire, $defaite, $combatNul, $idCompetiteur)
 {
+    
     $reqUpdateCompetiteur = $pdo->prepare('UPDATE resultat SET victoire = ?, defaite = ?, combat_nul = ? WHERE id_competiteur = ?');
     $reqUpdateCompetiteur->execute([$victoire, $defaite, $combatNul, $idCompetiteur]);
 }
@@ -178,7 +179,39 @@ function deleteResultat($pdo, $idCompetiteur)
     $reqInsertActualite->execute([$idCompetiteur]);
 }
 
+function supprimerMessage($pdo, $idMessage){
+    $reqSupprMessage = $pdo->prepare('DELETE FROM messages WHERE id_messages = ?');
+    $reqSupprMessage->execute([$idMessage]);
+}
 
+
+function repondreMsg ($pdo, $idMessage) {
+    $reqInsertMsg = $pdo->prepare('SELECT traiter FROM messages WHERE id_messages = ?');
+    $reqInsertMsg->execute([$idMessage]);
+}
+
+function updateRepondreMsg($pdo, $traite, $idMessage)
+{
+    $reqUpdateRepondreMsg = $pdo->prepare('UPDATE messages SET traite = ? WHERE id_messages = ?');
+    $reqUpdateRepondreMsg->execute([$traite, $idMessage]);
+}
+
+// function pour insérer le useer dans la BDD
+function insertUser($pdo, $nom, $prenom, $email, $hashPassword) {
+    $reqInsertUser = $pdo->prepare('INSERT INTO users(nom_user, prenom_user, email_user, mdp_user, id_role) VALUES (?,?,?,?,?)');
+    $reqInsertUser->execute([$nom, $prenom, $email, $hashPassword, 1]);
+}
+
+// function pour vérifier si un user existe dans la BDD grâce à l'email
+// le point "?" est présent pour la protection à l'injection SQL
+// On récupère des élements de la BdD avec la méthode fetch, dans ce cas précis, on récupère l'email.
+function verifUserExist($pdo, $email) {
+    $reqUserExist = $pdo->prepare('SELECT * FROM users WHERE email_user = ?');
+    $reqUserExist->execute([$email]);
+    $userExist = $reqUserExist->fetch();
+
+    return $userExist;
+}
 
 
 // inserer l'actualité dans la BdD, - FAIT

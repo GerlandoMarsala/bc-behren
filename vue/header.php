@@ -27,7 +27,7 @@
             <li><a href="index.php?page=3">A PROPOS</a></li>
             <!-- <li><a href="index.php?page=9">PARTENAIRES</a></li> -->
             <li><a href="index.php?page=2">CONTACT</a></li>
-            <li><a href="index.php?page=10"><i class="fa-solid fa-user text-white"></i></a></li>
+            <!-- <li><a href="index.php?page=10"><i class="fa-solid fa-user text-white"></i></a></li> -->
         </ul>
     </nav>
 </header>

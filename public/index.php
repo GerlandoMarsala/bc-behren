@@ -77,9 +77,6 @@
     if ($_GET['page'] == 9) {
       include("../vue/partenaires.php");
     }
-    if ($_GET['page'] == 10) {
-      include("../vue/connexion.php");
-    }
     if ($_GET['page'] == 11) {
       include("../vue/actualiteView.php");
     }

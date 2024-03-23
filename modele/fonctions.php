@@ -30,7 +30,7 @@ function getAllActualites($pdo)
 
 function getActualite($pdo, $idActualite)
 {
-    $reqInsertActualite = $pdo->prepare('SELECT * FROM actualite WHERE id_actualite = ?');
+    $reqInsertActualite = $pdo->prepare('SELECT * FROM actualite a, images i WHERE a.id_actualite = i.id_actualite AND a.id_actualite = ?');
     $reqInsertActualite->execute([$idActualite]);
     $listeActualites = $reqInsertActualite->fetch();
 
@@ -78,3 +78,4 @@ function getAllCompetitor($pdo)
 
     return $listeCompetitors;
 }
+

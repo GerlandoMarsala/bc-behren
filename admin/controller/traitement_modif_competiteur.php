@@ -3,6 +3,11 @@
 session_start();
 require '../modele/fonctions.php';
 require '../../modele/connexionBdd.php';
+// if (
+//     isset($_POST['victoire'], $_POST['defaite'], $_POST['combat_nul'])
+//     && !empty($_POST['victoire']) && !empty($_POST['defaite']) && !empty($_POST['combat_nul'])
+// ) {
+
 
 $idCompetiteur = $_POST['id_competiteur'];
 $idImages = $_POST['id_images'];
@@ -17,19 +22,22 @@ $victoire = $_POST['victoire'];
 $defaite = $_POST['defaite'];
 $combatNul = $_POST['combat_nul'];
 
-
 if (!empty($_POST)) {
     if (!empty($_FILES['photos']['name'])) {
         if (checkFilesCompetiteur()) {
-            checkPostCompetiteur($pdo, $nom, $prenom, $pro, $categorie, $poids, $idCompetiteur);
-            checkPostResultat($pdo, $victoire, $defaite, $combatNul, $idCompetiteur);
+            updateCompetiteur($pdo, $nom, $prenom, $pro, $categorie, $poids, $idCompetiteur);
+            updateResultat($pdo, $victoire, $defaite, $combatNul, $idCompetiteur);
             updateImageWithCompetitor($pdo, $nomImage, $idCompetiteur);
+        }else{
+            // ici si l'upload a échoué
         }
     } else {
-        checkPostCompetiteur($pdo, $nom, $prenom, $pro, $categorie, $poids, $idCompetiteur);
-        checkPostResultat($pdo, $victoire, $defaite, $combatNul, $idCompetiteur);
+        updateCompetiteur($pdo, $nom, $prenom, $pro, $categorie, $poids, $idCompetiteur);
+        updateResultat($pdo, $victoire, $defaite, $combatNul, $idCompetiteur);
     }
 }
+
+header('location:../public/index.php?page=6');
 
 
 function checkFilesCompetiteur()
@@ -48,27 +56,7 @@ function checkFilesCompetiteur()
     }
 }
 
-function checkPostCompetiteur($pdo, $nom, $prenom, $pro, $categorie, $poids, $idCompetiteur)
-{
-    if (
-        isset($_POST['nom'], $_POST['prenom'], $_POST['categorie'], $_POST['poids'])
-        && !empty($_POST['nom']) && !empty($_POST['prenom']) && !empty($_POST['categorie'] && !empty($_POST['poids']))
-    ) {
-        // insérer le competiteur
-        updateCompetiteur($pdo, $nom, $prenom, $pro, $categorie, $poids, $idCompetiteur);
-    }
-}
 
-function checkPostResultat($pdo, $victoire, $defaite, $combatNul, $idCompetiteur)
-{
-    if (
-        isset($_POST['victoire'], $_POST['defaite'], $_POST['combat_nul'])
-        && !empty($_POST['victoire']) && !empty($_POST['defaite']) && !empty($_POST['combat_nul'])
-    ) {
-        // insérer le competiteur
-        updateResultat($pdo, $victoire, $defaite, $combatNul, $idCompetiteur);
-    }
-}
 
 
 

@@ -53,9 +53,9 @@ $listeActualites = getAllActualites($pdo);
                             <img src="../public/assets/img/bcb-logo.jpeg" class="rounded-circle me-3" height="50px" width="50px" alt="avatar" />
                             <div>
                                 <h5 class="card-title font-weight-bold mb-2 nameActu"><?php echo htmlspecialchars($actualite['nom_actualite'], ENT_QUOTES, 'UTF-8'); ?></h5>
-                                <p class="card-text">
-                                    <?php echo htmlspecialchars($actualite['description'], ENT_QUOTES, 'UTF-8'); ?>
-                                </p>
+                                <!-- <p class="card-text">
+                                 <?php //echo htmlspecialchars($actualite['description'], ENT_QUOTES, 'UTF-8'); ?>
+                                </p> -->
                                 <p class="card-text"><i class="far fa-clock pe-2"></i><?php echo htmlspecialchars($actualite['date_actualite'], ENT_QUOTES, 'UTF-8'); ?></p>
                             </div>
                         </div>

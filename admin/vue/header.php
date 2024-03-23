@@ -59,7 +59,7 @@
         <li>
           <hr class="dropdown-divider">
         </li>
-        <li><a class="dropdown-item" href="#">Déconnexion</a></li>
+        <li><a class="dropdown-item" href="../controller/traitement_deconnexion.php">Déconnexion</a></li>
       </ul>
     </div>
   </div>
