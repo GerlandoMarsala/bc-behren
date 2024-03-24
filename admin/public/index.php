@@ -73,7 +73,7 @@
                 include("../vue/modif_competiteur.php");
             }
             if ($_GET['page'] == 9) {
-                include("../vue/detail_message.php");
+                include("../vue/repondre_message.php");
             } 
         }else {
             include("../vue/accueil.php");

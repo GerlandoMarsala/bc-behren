@@ -3,11 +3,11 @@
 require '../../modele/connexionBdd.php';
 require '../modele/fonctions.php';
 
-$repondreMsg = repondreMsg($pdo,$idMessage);
-
-if ($repondreMsg == 0){
-    updateRepondreMsg($pdo, 1, $idMessage);
-    header('location../public/index.php?page=5');
-} else {
-    header('location../public/index.php?page=5&erreur=MessageDejaRepondu');
+if(!empty($_POST)){
+    if(
+        isset($_POST['id_messages'], $_POST['email'], $_POST['message'])
+        && !empty($_POST['id_messages']) &&  !empty($_POST['email']) && !empty($_POST['message'])
+    ){
+        $response = updateRepondreMsg($pdo, 1, $_POST['id_messages']);
+    }
 }

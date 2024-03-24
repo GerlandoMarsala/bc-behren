@@ -71,3 +71,10 @@
     text-decoration: none;
     color: white;
 }
+.headerStyle {
+    background-color: red;
+}
+body {
+    max-height: 100%;
+    overflow: scroll;
+}
